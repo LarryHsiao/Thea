@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.silverhetch'
-version '1.0.6'
+version '1.0.7'
 
 pluginBundle {
     website = 'https://github.com/LarryHsiao/Thea'
