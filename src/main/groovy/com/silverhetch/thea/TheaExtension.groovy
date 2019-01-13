@@ -8,16 +8,13 @@ import com.silverhetch.thea.version.Versions
 import com.silverhetch.thea.version.VersionsImpl
 
 class TheaExtension {
-    private final Versions versions = new VersionsImpl(
-            new GitHeadTagSource(),
-            new ConstSource<Version>(new DebugVersion())
-    )
+    private String[] validFlavor = new String[0]
 
-    def versionName = { String flavor ->
-        return versions.versionByFlavor(flavor).versionName()
+    String[] getValidFlavor() {
+        return validFlavor
     }
 
-    def versionCode = { String flavor ->
-        return versions.versionByFlavor(flavor).versionCode()
+    void setValidFlavor(String[] validFlavor) {
+        this.validFlavor = validFlavor
     }
 }

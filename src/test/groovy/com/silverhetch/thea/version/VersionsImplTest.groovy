@@ -146,7 +146,7 @@ class VersionsImplTest extends GroovyTestCase {
     /**
      * If tag not found by empty flavor name, use the default one.
      */
-    void testEmptyFlavorNotFound() {
+    void testEmptyFlavorNotFoundVersionCode() {
         assertEquals(
                 1,
                 new VersionsImpl(
@@ -159,6 +159,22 @@ class VersionsImplTest extends GroovyTestCase {
                                 )
                         )
                 ).versionByFlavor("").versionCode()
+        )
+    }
+
+    void testEmptyFlavorNotFoundVersionName() {
+        assertEquals(
+                "DefaultName",
+                new VersionsImpl(
+                        new ConstSource<String[]>(
+                                ["sampleFlavor_v1.0.0"].toArray(new String[1])
+                        ),
+                        new ConstSource<Version>(
+                                new DebugVersion(
+                                        new ConstSource<String>("DefaultName")
+                                )
+                        )
+                ).versionByFlavor("").versionName()
         )
     }
 }
