@@ -1,0 +1,14 @@
+buildscript {
+    repositories {
+        maven { url = 'http://172.104.79.181:81/repository/Elizabeth/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'com.silverhetch',
+                name: 'thea'
+    }
+}
+
+apply plugin: 'com.silverhetch.thea'
+
+System.out.println(thea.versionIndicator.apply(""))

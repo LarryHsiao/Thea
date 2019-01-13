@@ -18,7 +18,7 @@ class DebugVersion implements Version {
 
     @Override
     String versionName() {
-        return gitTag()
+        return gitTag() + "(Debug)"
     }
 
     @Override
@@ -28,7 +28,7 @@ class DebugVersion implements Version {
 
     @Override
     String flavor() {
-        return ""
+        return "Debug"
     }
 
     @Override

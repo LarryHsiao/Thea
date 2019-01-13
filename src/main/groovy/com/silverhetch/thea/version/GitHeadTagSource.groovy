@@ -8,18 +8,7 @@ import com.silverhetch.clotho.Source
 class GitHeadTagSource implements Source<String[]> {
     @Override
     String[] fetch() {
-        return getCurrentGitTag()
-    }
-
-    /**
-     * Obtain current versionByFlavor on git log tree.
-     */
-    static def getCurrentGitTag = { ->
-        def sout = new StringBuilder()
-        def serr = new StringBuilder()
-
-        def proc = 'git versionByFlavor --points-at HEAD'.execute()
-        proc.consumeProcessOutput(sout, serr)
-        return sout.toString()
+        def proc = 'git tag --points-at HEAD'.execute()
+        return proc.text.split('\n')
     }
 }

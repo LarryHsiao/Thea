@@ -1,4 +1,4 @@
-package com.silverhetch.thea
+package com.silverhetch.thea.version
 
 import com.silverhetch.clotho.Source
 import com.silverhetch.thea.version.Version
@@ -24,8 +24,10 @@ class VersionString implements Source<String> {
                 tagSource,
                 defaultVersion
         ).versionByFlavor(flavor)
-        return "Git tag: ${version.gitTag()}\n" +
-                "Version name: ${version.versionName()}\n" +
-                "Version code: ${version.versionCode()}"
+        return "Version---------------------\n" +
+                "tag: ${version.gitTag()}\n" +
+                "name: ${version.versionName()}\n" +
+                "code: ${version.versionCode()}\n" +
+                "============================"
     }
 }

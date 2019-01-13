@@ -1,11 +1,21 @@
+buildscript {
+    repositories {
+        maven { url = 'http://172.104.79.181:81/repository/Elizabeth/' }
+    }
+}
+
 plugins {
+    id 'maven'
     id 'groovy'
     id 'java-gradle-plugin'
     id 'com.gradle.plugin-publish' version '0.10.0'
+    id 'com.silverhetch.thea' version 'v1.1.1'
 }
 
 group 'com.silverhetch'
-version '1.0.8'
+version thea.version.versionByFlavor("").versionName()
+
+println(thea.versionIndicator.apply(""))
 
 pluginBundle {
     website = 'https://github.com/LarryHsiao/Thea'
@@ -29,9 +39,31 @@ repositories {
     maven { url = 'http://172.104.79.181:81/repository/Elizabeth/' }
 }
 
+task createClasspathManifest {
+    def outputDir = file("$buildDir/$name")
+
+    inputs.files sourceSets.main.runtimeClasspath
+    outputs.dir outputDir
+
+    doLast {
+        outputDir.mkdirs()
+        file("$outputDir/plugin-classpath.txt").text = sourceSets.main.runtimeClasspath.join("\n")
+    }
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile "com.silverhetch:clotho:1.1.0"
     implementation gradleApi()
     implementation localGroovy()
+    testRuntime files(createClasspathManifest)
+}
+
+// For testing purpose uploadArchives to local folder
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('build/repo_temp'))
+        }
+    }
 }
