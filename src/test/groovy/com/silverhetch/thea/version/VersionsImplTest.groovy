@@ -126,4 +126,39 @@ class VersionsImplTest extends GroovyTestCase {
                 ).versionByFlavor("FlavorName").versionCode()
         )
     }
+
+    void testEmptyFlavorFound() {
+        assertEquals(
+                10000,
+                new VersionsImpl(
+                        new ConstSource<String[]>(
+                                ["v1.0.0"].toArray(new String[1])
+                        ),
+                        new ConstSource<Version>(
+                                new DebugVersion(
+                                        new ConstSource<String>("DefaultName")
+                                )
+                        )
+                ).versionByFlavor("").versionCode()
+        )
+    }
+
+    /**
+     * If tag not found by empty flavor name, use the default one.
+     */
+    void testEmptyFlavorNotFound() {
+        assertEquals(
+                1,
+                new VersionsImpl(
+                        new ConstSource<String[]>(
+                                ["sampleFlavor_v1.0.0"].toArray(new String[1])
+                        ),
+                        new ConstSource<Version>(
+                                new DebugVersion(
+                                        new ConstSource<String>("DefaultName")
+                                )
+                        )
+                ).versionByFlavor("").versionCode()
+        )
+    }
 }

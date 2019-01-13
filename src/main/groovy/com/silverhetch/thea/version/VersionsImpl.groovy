@@ -43,5 +43,6 @@ class VersionsImpl implements Versions {
                 return new ConstVersion(tags[i], "")
             }
         }
+        return defaultVersion.fetch()
     }
 }
