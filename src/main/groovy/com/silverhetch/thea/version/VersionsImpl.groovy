@@ -1,6 +1,10 @@
 package com.silverhetch.thea.version
 
 import com.silverhetch.clotho.Source
+import com.silverhetch.thea.version.pattern.FlavorVersionPattern
+import com.silverhetch.thea.version.pattern.NonFlavorVersionPattern
+
+import java.util.regex.Pattern
 
 /**
  * Versioning by Git tags.
@@ -16,16 +20,28 @@ class VersionsImpl implements Versions {
 
     @Override
     Version versionByFlavor(String flavor) {
-        if (flavor == null || flavor.isEmpty()) {
-            throw new IllegalArgumentException("No flavor provided")
+        if ((flavor == null || flavor.isEmpty())) {
+            return findNonFlavorTag()
         }
-        String[] tags = tagSource.fetch()
+        final String[] tags = tagSource.fetch()
+        final Pattern versionPattern = new FlavorVersionPattern(flavor).fetch()
 
         for (int i = 0; i < tags.length; i++) {
-            if (tags[i].toLowerCase().startsWith(flavor.toLowerCase())) {
+            if (versionPattern.matcher(tags[i]).matches()) {
                 return new ConstVersion(tags[i], flavor)
             }
         }
         return defaultVersion.fetch()
+    }
+
+    private Version findNonFlavorTag() {
+        final String[] tags = tagSource.fetch()
+        final Pattern versionpattern = new NonFlavorVersionPattern().fetch()
+
+        for (int i = 0; i < tags.length; i++) {
+            if (versionpattern.matcher(tags[i]).matches()) {
+                return new ConstVersion(tags[i], "")
+            }
+        }
     }
 }
