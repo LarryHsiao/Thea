@@ -2,8 +2,25 @@ Thea
 -----
 
 A Gradle plugin that versioning project with Git tag.
+We use git tags for versioning, but it is not as same as the version we have actually put in the source code.
+This is a plugin which may keep us out of the trouble like that.
 
-Still in progress.
+[![We recommend IntelliJ IDEA](http://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
+
+[![](https://silverhetch.com:9082/app/rest/builds/buildType:Thea_Build/statusIcon.svg)](https://github.com/LarryHsiao/thea)
+[![Build Status](https://travis-ci.org/LarryHsiao/Thea.svg?branch=master)](https://travis-ci.org/LarryHsiao/Thea)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+#### Capability
+- Identifies Version with Sequence-based identifiers(3 numbers) major, minor, patch (e.g. xx.xx.xx)
+  - Each number is less then 100
+  - Supports flavor prefix (e.g. flavorName_v1.0.0) 
+- Generates version indicators
+  - Version name: (tag)v1.0.0 -> (output)1.0.0
+  - Version code: integer which calculated with version name. (tag)v1.0.0 -> (output)10000
+
+#### Example
+
 
 #### Apply plugin
 

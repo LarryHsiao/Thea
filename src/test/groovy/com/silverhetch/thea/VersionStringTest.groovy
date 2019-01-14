@@ -9,9 +9,11 @@ import com.silverhetch.thea.version.VersionString
 class VersionStringTest extends GroovyTestCase {
     void testDefaultVersion() {
         assertEquals(
-                "Git tag: defaultName_v1.0.0\n" +
-                        "Version name: v1.0.0\n" +
-                        "Version code: 10000",
+                "Version---------------------\n" +
+                        "tag: defaultName_v1.0.0\n" +
+                        "name: 1.0.0\n" +
+                        "code: 10000\n" +
+                        "============================",
                 new VersionString(
                         new ConstSource<String[]>(""),
                         new ConstSource<Version>(new ConstVersion(
@@ -24,9 +26,11 @@ class VersionStringTest extends GroovyTestCase {
 
     void testVersion() {
         assertEquals(
-                "Git tag: flavorName_v1.0.0\n" +
-                        "Version name: v1.0.0\n" +
-                        "Version code: 10000",
+                "Version---------------------\n" +
+                        "tag: flavorName_v1.0.0\n" +
+                        "name: 1.0.0\n" +
+                        "code: 10000\n" +
+                        "============================",
                 new VersionString(
                         new ConstSource<String[]>(
                                 ["flavorName_v1.0.0"].toArray(new String[1])
@@ -39,9 +43,11 @@ class VersionStringTest extends GroovyTestCase {
 
     void testNoFlavorProvidedUsingDefault() {
         assertEquals(
-                "Git tag: DefaultName\n" +
-                        "Version name: DefaultName\n" +
-                        "Version code: 1",
+                "Version---------------------\n" +
+                        "tag: DefaultName\n" +
+                        "name: DefaultName(Debug)\n" +
+                        "code: 1\n" +
+                        "============================",
             new VersionString(
                     new ConstSource<String[]>(
                             ["flavorName_v1.0.0"].toArray(new String[1])

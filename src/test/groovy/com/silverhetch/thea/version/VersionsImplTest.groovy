@@ -21,7 +21,7 @@ class VersionsImplTest extends GroovyTestCase {
 
     void testDefaultVersionName() {
         assertEquals(
-                "Version Name",
+                "Version Name(Debug)",
                 new VersionsImpl(
                         new ConstSource<String[]>(
                                 new String[0]
@@ -51,7 +51,7 @@ class VersionsImplTest extends GroovyTestCase {
 
     void testDefaultVersionFlavor() {
         assertEquals(
-                "",
+                "Debug",
                 new VersionsImpl(
                         new ConstSource<String[]>(
                                 new String[0]
@@ -81,7 +81,7 @@ class VersionsImplTest extends GroovyTestCase {
 
     void testVersionName() {
         assertEquals(
-                "v1.0.0",
+                "1.0.0",
                 new VersionsImpl(
                         new ConstSource<String[]>(
                                 ["FlavorName_v1.0.0"].toArray(new String[1])
@@ -164,7 +164,7 @@ class VersionsImplTest extends GroovyTestCase {
 
     void testEmptyFlavorNotFoundVersionName() {
         assertEquals(
-                "DefaultName",
+                "DefaultName(Debug)",
                 new VersionsImpl(
                         new ConstSource<String[]>(
                                 ["sampleFlavor_v1.0.0"].toArray(new String[1])
