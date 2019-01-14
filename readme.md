@@ -22,9 +22,6 @@ This is a plugin which may keep us out of the trouble like that.
   - Version name: (tag)v1.0.0 -> (output)1.0.0
   - Version code: integer which calculated with version name. (tag)v1.0.0 -> (output)10000
 
-#### Example
-
-
 #### Apply plugin
 
 ```groovy
@@ -48,4 +45,38 @@ System.out.println(thea.versionIndicator.apply(""))
 // To apply to java project, here is a sample
 group 'com.silverhetch'
 version thea.version.versionByFlavor("").versionName()
+```
+
+#### Use case examples
+
+###### v1.0.0
+```groovy
+def versionName = thea.version.versionByFlavor("").versionName()
+def versionCode = thea.version.versionByFlavor("").versionCode()
+
+// versionName = 1.0.0
+// versionCode = 10000
+
+```
+
+###### FlavorName_v1.0.0
+
+```groovy
+def versionName = thea.version.versionByFlavor("FlavorName").versionName() // 1.0.0
+def versionCode = thea.version.versionByFlavor("FlavorName").versionCode() // 10000
+
+// versionName = 1.0.0
+// versionCode = 10000
+
+```
+
+###### FlavorName_v1.0.0
+
+```groovy
+def versionName = thea.version.versionByFlavor("FlavorNameNotMatched").versionName() 
+def versionCode = thea.version.versionByFlavor("FlavorNameNotMatched").versionCode() 
+
+// versionName = 201901151200(Debug)
+// versioncode = 1
+
 ```
