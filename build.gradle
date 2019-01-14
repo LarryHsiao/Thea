@@ -5,6 +5,7 @@ buildscript {
 }
 
 plugins {
+    id 'jacoco'
     id 'maven'
     id 'groovy'
     id 'java-gradle-plugin'
@@ -34,21 +35,18 @@ gradlePlugin {
     }
 }
 
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        csv.enabled = false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+}
+
 repositories {
     mavenCentral()
     maven { url = 'http://172.104.79.181:81/repository/Elizabeth/' }
-}
-
-task createClasspathManifest {
-    def outputDir = file("$buildDir/$name")
-
-    inputs.files sourceSets.main.runtimeClasspath
-    outputs.dir outputDir
-
-    doLast {
-        outputDir.mkdirs()
-        file("$outputDir/plugin-classpath.txt").text = sourceSets.main.runtimeClasspath.join("\n")
-    }
 }
 
 dependencies {
@@ -56,7 +54,6 @@ dependencies {
     compile "com.silverhetch:clotho:1.1.0"
     implementation gradleApi()
     implementation localGroovy()
-    testRuntime files(createClasspathManifest)
 }
 
 // For testing purpose uploadArchives to local folder
