@@ -12,23 +12,18 @@ import com.silverhetch.thea.version.VersionsImpl
 import java.util.function.Function
 
 class TheaExtension {
-    public final Function<String, Versions> version = new Function<String, Versions>() {
-        @Override
-        Versions apply(String flavor) {
-            return new VersionsImpl(
-                    new GitAllTagByFlavor(flavor),
-                    new ConstSource<Version>(
-                            new DebugVersion()
-                    )
+    public final Versions version = new VersionsImpl(
+            new GitAllTagByFlavor(),
+            new ConstSource<Version>(
+                    new DebugVersion()
             )
-        }
-    }
+    )
 
     public final Function<String, String> versionIndicator = new Function<String, String>() {
         @Override
         String apply(String flavor) {
             return new VersionString(
-                    new GitAllTagByFlavor(flavor),
+                    new GitAllTagByFlavor(),
                     new ConstSource<Version>(
                             new DebugVersion()
                     ), flavor
