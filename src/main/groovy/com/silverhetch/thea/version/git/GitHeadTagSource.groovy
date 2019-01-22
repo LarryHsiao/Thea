@@ -1,4 +1,4 @@
-package com.silverhetch.thea.version
+package com.silverhetch.thea.version.git
 
 import com.silverhetch.clotho.Source
 

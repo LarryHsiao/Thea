@@ -1,6 +1,6 @@
 package com.silverhetch.thea
 
-import com.silverhetch.thea.version.GitHeadTagSource
+import com.silverhetch.thea.version.git.GitHeadTagSource
 
 
 class GitHeadVersionSourceTest extends GroovyTestCase {
