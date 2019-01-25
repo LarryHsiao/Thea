@@ -3,7 +3,7 @@ Thea
 
 A Gradle plugin that versioning project with Git tag.
 We use git tags for versioning, but it is not as same as the version we have actually put in the source code.
-This is a plugin which may keep us out of the trouble like that.
+This is a plugin which read current tag and make it available in gradle script.
 
 [![We recommend IntelliJ IDEA](http://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
 
