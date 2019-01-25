@@ -9,6 +9,7 @@ This is a plugin which may keep us out of the trouble like that.
 
 [![PDD status](http://www.0pdd.com/svg?name=LarryHsiao/thea)](http://www.0pdd.com/p?name=LarryHsiao/thea)
 
+[![](https://img.shields.io/github/tag/LarryHsiao/Thea.svg)](https://github.com/LarryHsiao/Thea/tags)
 [![](https://silverhetch.com:9082/app/rest/builds/buildType:Thea_Build/statusIcon.svg)](https://github.com/LarryHsiao/thea)
 [![Build Status](https://travis-ci.org/LarryHsiao/Thea.svg?branch=master)](https://travis-ci.org/LarryHsiao/Thea)
 [![codecov](https://codecov.io/gh/LarryHsiao/Thea/branch/master/graph/badge.svg)](https://codecov.io/gh/LarryHsiao/Thea)
