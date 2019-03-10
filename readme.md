@@ -48,6 +48,25 @@ group 'com.silverhetch'
 version thea.version.versionByFlavor("").versionName()
 ```
 
+#### Print Version in Gradle output
+
+Add the following line to Build.Gradle or anywhere you want to apply.
+The current version shows up every time we do gradle sync.
+
+```groovy
+println(thea.versionIndicator.apply(""))
+```
+
+###### Output Example
+
+```
+Version---------------------
+tag: 201903102330
+name: 201903102330(Debug)
+code: 1
+============================
+```
+
 #### Use case examples
 
 ###### v1.0.0
