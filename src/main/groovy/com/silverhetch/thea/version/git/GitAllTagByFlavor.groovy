@@ -9,7 +9,7 @@ class GitAllTagByFlavor implements Source<String[]> {
 
     @Override
     String[] fetch() {
-        def proc = "git tag -l *v* --sort=-v:refname".execute()
+        def proc = "git tag -l --sort=-v:refname --merged".execute()
         return proc.text.split('\n')
     }
 }
