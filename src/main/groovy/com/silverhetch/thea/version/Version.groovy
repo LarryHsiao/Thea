@@ -3,7 +3,7 @@ package com.silverhetch.thea.version
 interface Version {
 
     /**
-     * @return The versionByFlavor name
+     * @return The byFlavor name
      */
     String gitTag()
 

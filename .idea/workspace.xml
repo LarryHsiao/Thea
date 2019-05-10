@@ -24,10 +24,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="update readme.md for print current version in console">
-      <change afterPath="$PROJECT_DIR$/.idea/thea.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitAllTagByFlavor.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitAllTagByFlavor.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Version.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Version.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionString.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionString.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/VersionsImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/VersionsImplTest.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -124,28 +127,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testProject/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitHeadTagSource.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaPlugin.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="242">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#31#59#0" expanded="true" />
               </folding>
@@ -154,10 +139,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="330">
+              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding>
                 <element signature="e#31#79#0" expanded="true" />
               </folding>
@@ -166,19 +178,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testProject/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitAllTagByFlavor.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+            <state relative-caret-position="154">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -186,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="372">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="e#38#74#0" expanded="true" />
               </folding>
@@ -196,10 +199,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/VersionIntTest.groovy">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="110">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -217,7 +220,7 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1031">
+              <first_editor relative-caret-position="1782">
                 <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
               </first_editor>
               <second_editor />
@@ -266,6 +269,7 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -286,7 +290,6 @@
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/tags/Version.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/tags/ConstTag.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/tags/ConstVersion.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/GitHeadVersionSourceTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionInt.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/DateTime.groovy" />
@@ -305,7 +308,6 @@
         <option value="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/GitHeadTagSourceTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/GenerateTask.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/VersionExtension.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaPlugin.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/TheaPluginTest.groovy" />
         <option value="$PROJECT_DIR$/testProject/settings.gradle" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy" />
@@ -320,10 +322,12 @@
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/GitAllTagByFlavor.groovy" />
         <option value="$PROJECT_DIR$/testProject/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitAllTagByFlavor.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaPlugin.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy" />
       </list>
     </option>
   </component>
@@ -338,7 +342,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -385,32 +388,14 @@
               <item name="thea" type="b2602c69:ProjectViewProjectNode" />
               <item name="thea" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="thea" type="462c0819:PsiDirectoryNode" />
-              <item name="version" type="462c0819:PsiDirectoryNode" />
-              <item name="git" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thea" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="thea" type="462c0819:PsiDirectoryNode" />
-              <item name="version" type="462c0819:PsiDirectoryNode" />
-              <item name="pattern" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thea" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="testProject" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -429,7 +414,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -466,26 +451,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in thea.test">
-    <configuration name="thea [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jacocoTestReport" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in thea.test (1)">
     <configuration name="thea [publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -533,6 +499,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in thea.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thea.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in thea.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thea.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -543,11 +517,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in thea.test (1)" />
         <item itemvalue="JUnit.All in thea.test" />
         <item itemvalue="Gradle.thea [publishPlugins]" />
         <item itemvalue="JUnit.All in com.silverhetch.thea.test" />
         <item itemvalue="Gradle.thea [test jacocoTestReport]" />
-        <item itemvalue="Gradle.thea [jacocoTestReport]" />
       </list>
     </recent_temporary>
   </component>
@@ -589,6 +563,9 @@
       <workItem from="1552232090463" duration="277000" />
       <workItem from="1552816621022" duration="14000" />
       <workItem from="1557044986717" duration="304000" />
+      <workItem from="1557236997208" duration="81000" />
+      <workItem from="1557277594598" duration="640000" />
+      <workItem from="1557494222428" duration="247000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1547137148416</created>
@@ -748,9 +725,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GitHeadVersionSourceTest - 2019.01.14 at 02h 36m 14s.xml">
-      <configuration name="GitHeadVersionSourceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GitHeadVersionSourceTest - 2019.01.14 at 02h 37m 25s.xml">
       <configuration name="GitHeadVersionSourceTest" configurationId="JUnit" />
     </history-entry>
@@ -778,15 +752,17 @@
     <history-entry file="All_in_com_silverhetch_thea_test - 2019.01.22 at 22h 55m 06s.xml">
       <configuration name="All in com.silverhetch.thea.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_thea_test - 2019.05.05 at 16h 40m 30s.xml">
+      <configuration name="All in thea.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74460000" />
+    <option name="totallyTimeSpent" value="76570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1366" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20569366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20405728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -794,8 +770,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32970712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45355648" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3707113" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -805,7 +781,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.4594142" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.5631799" />
       <window_info anchor="bottom" id="TeamCity" order="13" />
       <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.32972324" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32970712" />
@@ -909,7 +885,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionString.groovy</url>
-          <line>22</line>
+          <line>20</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -1064,13 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/VersionStringTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -1078,13 +1047,6 @@
           <folding>
             <element signature="e#30#78#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1116,13 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10-all/54ye4nru8k2rpf7xwj15he4fo/gradle-4.10/lib/groovy-all-2.4.15.jar!/groovy/lang/GString.class" />
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/DebugVersion.groovy">
       <provider selected="true" editor-type-id="text-editor">
@@ -1135,13 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -1172,16 +1120,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/com.silverhetch.thea.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1031">
-            <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testProject/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1203,23 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/VersionsImplTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#38#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitHeadTagSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1227,30 +1148,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitAllTagByFlavor.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/VersionsImplTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1782">
+            <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#31#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="110">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
-            <element signature="e#31#79#0" expanded="true" />
+            <element signature="e#38#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitAllTagByFlavor.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        <state relative-caret-position="330">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="e#31#79#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1323,7 +1299,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>main|com.silverhetch.thea</last-edited>
+          <last-edited>main|thea</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

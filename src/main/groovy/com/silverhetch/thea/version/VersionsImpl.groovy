@@ -19,7 +19,7 @@ class VersionsImpl implements Versions {
     }
 
     @Override
-    Version versionByFlavor(String flavor) {
+    Version byFlavor(String flavor) {
         if ((flavor == null || flavor.isEmpty())) {
             return findNonFlavorTag()
         }

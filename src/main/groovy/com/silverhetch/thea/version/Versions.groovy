@@ -6,8 +6,8 @@ package com.silverhetch.thea.version
 interface Versions {
 
     /**
-     * @param flavor The flavor name, or the versionByFlavor prefix.
-     * @return The first versionByFlavor we can find with the flavor.
+     * @param flavor The flavor name, or the byFlavor prefix.
+     * @return The first byFlavor we can find with the flavor.
      */
-    Version versionByFlavor(String flavor)
+    Version byFlavor(String flavor)
 }

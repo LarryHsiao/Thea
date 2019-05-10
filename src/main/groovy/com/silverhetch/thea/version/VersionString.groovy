@@ -1,8 +1,6 @@
 package com.silverhetch.thea.version
 
 import com.silverhetch.clotho.Source
-import com.silverhetch.thea.version.Version
-import com.silverhetch.thea.version.VersionsImpl
 
 /**
  * Source for version indicator String.
@@ -23,7 +21,7 @@ class VersionString implements Source<String> {
         Version version = new VersionsImpl(
                 tagSource,
                 defaultVersion
-        ).versionByFlavor(flavor)
+        ).byFlavor(flavor)
         return "Version---------------------\n" +
                 "tag: ${version.gitTag()}\n" +
                 "name: ${version.versionName()}\n" +

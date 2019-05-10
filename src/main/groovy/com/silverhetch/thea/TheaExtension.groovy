@@ -19,7 +19,20 @@ class TheaExtension {
             )
     )
 
+    @Deprecated
     public final Function<String, String> versionIndicator = new Function<String, String>() {
+        @Override
+        String apply(String flavor) {
+            return new VersionString(
+                    new GitAllTagByFlavor(),
+                    new ConstSource<Version>(
+                            new DebugVersion()
+                    ), flavor
+            ).fetch()
+        }
+    }
+
+    public final Function<String, String> indicator = new Function<String, String>() {
         @Override
         String apply(String flavor) {
             return new VersionString(

@@ -15,7 +15,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("Version Name")
                                 )
                         )
-                ).versionByFlavor("SampleFlavor").gitTag()
+                ).byFlavor("SampleFlavor").gitTag()
         )
     }
 
@@ -31,7 +31,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("Version Name")
                                 )
                         )
-                ).versionByFlavor("SampleFlavor").versionName()
+                ).byFlavor("SampleFlavor").versionName()
         )
     }
 
@@ -45,7 +45,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<Version>(
                                 new DebugVersion()
                         )
-                ).versionByFlavor("SampleFlavor").versionCode()
+                ).byFlavor("SampleFlavor").versionCode()
         )
     }
 
@@ -59,7 +59,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<Version>(
                                 new DebugVersion()
                         )
-                ).versionByFlavor("SampleFlavor").flavor()
+                ).byFlavor("SampleFlavor").flavor()
         )
     }
 
@@ -75,7 +75,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("DefaultName")
                                 )
                         )
-                ).versionByFlavor("FlavorName").gitTag()
+                ).byFlavor("FlavorName").gitTag()
         )
     }
 
@@ -91,7 +91,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("DefaultName")
                                 )
                         )
-                ).versionByFlavor("FlavorName").versionName()
+                ).byFlavor("FlavorName").versionName()
         )
     }
 
@@ -107,7 +107,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("DefaultName")
                                 )
                         )
-                ).versionByFlavor("FlavorName").flavor()
+                ).byFlavor("FlavorName").flavor()
         )
     }
 
@@ -123,7 +123,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("DefaultName")
                                 )
                         )
-                ).versionByFlavor("FlavorName").versionCode()
+                ).byFlavor("FlavorName").versionCode()
         )
     }
 
@@ -139,7 +139,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("DefaultName")
                                 )
                         )
-                ).versionByFlavor("").versionCode()
+                ).byFlavor("").versionCode()
         )
     }
 
@@ -158,7 +158,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("DefaultName")
                                 )
                         )
-                ).versionByFlavor("").versionCode()
+                ).byFlavor("").versionCode()
         )
     }
 
@@ -174,7 +174,7 @@ class VersionsImplTest extends GroovyTestCase {
                                         new ConstSource<String>("DefaultName")
                                 )
                         )
-                ).versionByFlavor("").versionName()
+                ).byFlavor("").versionName()
         )
     }
 }
