@@ -9,7 +9,7 @@ class VersionIntTest extends GroovyTestCase {
                 0,
                 new VersionInt(
                         new ConstSource<String>("v0.0.0")
-                ).fetch()
+                ).value()
         )
     }
 
@@ -18,7 +18,7 @@ class VersionIntTest extends GroovyTestCase {
                 0,
                 new VersionInt(
                         new ConstSource<String>("v0.0.1")
-                ).fetch()
+                ).value()
         )
     }
 
@@ -27,7 +27,7 @@ class VersionIntTest extends GroovyTestCase {
                 0,
                 new VersionInt(
                         new ConstSource<String>("0.0.1")
-                ).fetch()
+                ).value()
         )
     }
 
@@ -35,7 +35,7 @@ class VersionIntTest extends GroovyTestCase {
         try {
             new VersionInt(
                     new ConstSource<String>("INVALIDED")
-            ).fetch()
+            ).value()
             fail()
         } catch (IllegalArgumentException e) {
             assertTrue(true)
@@ -47,7 +47,7 @@ class VersionIntTest extends GroovyTestCase {
                 10000,
                 new VersionInt(
                         new ConstSource<String>("v1.0.0")
-                ).fetch()
+                ).value()
         )
     }
 
@@ -57,7 +57,7 @@ class VersionIntTest extends GroovyTestCase {
                 100,
                 new VersionInt(
                         new ConstSource<String>("v0.1.0")
-                ).fetch()
+                ).value()
         )
     }
 
@@ -67,7 +67,7 @@ class VersionIntTest extends GroovyTestCase {
                 1,
                 new VersionInt(
                         new ConstSource<String>("v0.0.1")
-                ).fetch()
+                ).value()
         )
     }
 

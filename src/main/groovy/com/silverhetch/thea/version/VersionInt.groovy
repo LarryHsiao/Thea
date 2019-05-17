@@ -13,9 +13,9 @@ class VersionInt implements Source<Integer> {
     }
 
     @Override
-    Integer fetch() {
+    Integer value() {
         try {
-            def (major, minor, patch) = versionString.fetch().replaceAll("v", "").split('\\.')
+            def (major, minor, patch) = versionString.value().replaceAll("v", "").split('\\.')
             return (Integer.valueOf(major.trim()) * 10000) +
                     (Integer.valueOf(minor.trim()) * 100) +
                     Integer.valueOf(patch.trim())

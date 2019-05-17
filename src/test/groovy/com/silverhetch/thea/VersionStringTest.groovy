@@ -20,7 +20,7 @@ class VersionStringTest extends GroovyTestCase {
                                 "defaultName_v1.0.0",
                                 "defaultName"
                         )), "NoneFlavor"
-                ).fetch()
+                ).value()
         )
     }
 
@@ -37,7 +37,7 @@ class VersionStringTest extends GroovyTestCase {
                         ),
                         new ConstSource<Version>(new DebugVersion()),
                         "flavorName"
-                ).fetch()
+                ).value()
         )
     }
 
@@ -56,7 +56,7 @@ class VersionStringTest extends GroovyTestCase {
                             new ConstSource<String>("DefaultName")
                     )),
                     ""
-            ).fetch()
+            ).value()
         )
     }
 

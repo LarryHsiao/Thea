@@ -23,26 +23,26 @@ class VersionsImpl implements Versions {
         if ((flavor == null || flavor.isEmpty())) {
             return findNonFlavorTag()
         }
-        final String[] tags = tagSource.fetch()
-        final Pattern versionPattern = new FlavorVersionPattern(flavor).fetch()
+        final String[] tags = tagSource.value()
+        final Pattern versionPattern = new FlavorVersionPattern(flavor).value()
 
         for (int i = 0; i < tags.length; i++) {
             if (versionPattern.matcher(tags[i]).matches()) {
                 return new ConstVersion(tags[i], flavor)
             }
         }
-        return defaultVersion.fetch()
+        return defaultVersion.value()
     }
 
     private Version findNonFlavorTag() {
-        final String[] tags = tagSource.fetch()
-        final Pattern versionpattern = new NonFlavorVersionPattern().fetch()
+        final String[] tags = tagSource.value()
+        final Pattern versionpattern = new NonFlavorVersionPattern().value()
 
         for (int i = 0; i < tags.length; i++) {
             if (versionpattern.matcher(tags[i]).matches()) {
                 return new ConstVersion(tags[i], "")
             }
         }
-        return defaultVersion.fetch()
+        return defaultVersion.value()
     }
 }

@@ -34,6 +34,6 @@ class ConstVersion implements Version {
                 new ConstSource<String>(
                         versionName()
                 )
-        ).fetch()
+        ).value()
     }
 }

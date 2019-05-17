@@ -17,7 +17,7 @@ class VersionString implements Source<String> {
     }
 
     @Override
-    String fetch() {
+    String value() {
         Version version = new VersionsImpl(
                 tagSource,
                 defaultVersion

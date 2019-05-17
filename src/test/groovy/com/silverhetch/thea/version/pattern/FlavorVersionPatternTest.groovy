@@ -3,7 +3,7 @@ package com.silverhetch.thea.version.pattern
 class FlavorVersionPatternTest extends GroovyTestCase {
     void testSimpleCorrect() {
         assertTrue(
-                new FlavorVersionPattern("FlavorName").fetch().matcher(
+                new FlavorVersionPattern("FlavorName").value().matcher(
                         "FlavorName_v1.0.0"
                 ).matches()
         )
@@ -11,7 +11,7 @@ class FlavorVersionPatternTest extends GroovyTestCase {
 
     void testNoFlavor() {
         assertFalse(
-                new FlavorVersionPattern("FlavorName").fetch().matcher(
+                new FlavorVersionPattern("FlavorName").value().matcher(
                         "v1.0.0"
                 ).matches()
         )
@@ -19,7 +19,7 @@ class FlavorVersionPatternTest extends GroovyTestCase {
 
     void testWrongFlavor() {
         assertFalse(
-                new FlavorVersionPattern("FlavorName").fetch().matcher(
+                new FlavorVersionPattern("FlavorName").value().matcher(
                         "PhantomFlavor_v1.0.0"
                 ).matches()
         )
@@ -27,7 +27,7 @@ class FlavorVersionPatternTest extends GroovyTestCase {
 
     void testExceptionWithEmptyFlavor() {
         try {
-            new FlavorVersionPattern("").fetch().matcher(
+            new FlavorVersionPattern("").value().matcher(
                     "v1.0.0"
             ).matches()
             fail()

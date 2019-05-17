@@ -15,7 +15,7 @@ class FlavorVersionPattern implements Source<Pattern> {
     }
 
     @Override
-    Pattern fetch() {
+    Pattern value() {
         if (flavor == null || flavor.isEmpty()) {
             throw new IllegalArgumentException("The flavor should never be empty.")
         }

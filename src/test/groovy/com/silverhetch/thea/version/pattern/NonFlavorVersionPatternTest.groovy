@@ -3,7 +3,7 @@ package com.silverhetch.thea.version.pattern
 class NonFlavorVersionPatternTest extends GroovyTestCase {
     void testCorrect() {
         assertTrue(
-                new NonFlavorVersionPattern().fetch().matcher(
+                new NonFlavorVersionPattern().value().matcher(
                         "v1.0.0"
                 ).matches()
         )
@@ -11,7 +11,7 @@ class NonFlavorVersionPatternTest extends GroovyTestCase {
 
     void testWithFlavor() {
         assertFalse(
-                new NonFlavorVersionPattern().fetch().matcher(
+                new NonFlavorVersionPattern().value().matcher(
                         "flavor_v1.0.0"
                 ).matches()
         )
@@ -19,7 +19,7 @@ class NonFlavorVersionPatternTest extends GroovyTestCase {
 
     void testLargeVersion(){
         assertTrue(
-                new NonFlavorVersionPattern().fetch().matcher(
+                new NonFlavorVersionPattern().value().matcher(
                         "v99.99.99"
                 ).matches()
         )

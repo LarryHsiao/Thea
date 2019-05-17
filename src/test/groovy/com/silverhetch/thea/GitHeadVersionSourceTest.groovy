@@ -5,6 +5,6 @@ import com.silverhetch.thea.version.git.GitHeadTagSource
 
 class GitHeadVersionSourceTest extends GroovyTestCase {
     void testAvailable() {
-        assertNotNull(new GitHeadTagSource().fetch())
+        assertNotNull(new GitHeadTagSource().value())
     }
 }

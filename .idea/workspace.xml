@@ -23,15 +23,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="update readme.md for print current version in console">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Version.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Version.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionString.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionString.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/VersionsImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/VersionsImplTest.groovy" afterDir="false" />
-    </list>
+    <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -168,8 +160,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="836">
+              <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               <folding>
                 <element signature="e#31#79#0" expanded="true" />
               </folding>
@@ -331,9 +323,13 @@
       </list>
     </option>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="RSaHuibF" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="2560" />
-    <option name="height" value="1366" />
+    <option name="x" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -451,7 +447,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in thea.test (1)">
+  <component name="RunManager" selected="Gradle.thea [publishPlugins]">
     <configuration name="thea [publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -517,9 +513,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.thea [publishPlugins]" />
         <item itemvalue="JUnit.All in thea.test (1)" />
         <item itemvalue="JUnit.All in thea.test" />
-        <item itemvalue="Gradle.thea [publishPlugins]" />
         <item itemvalue="JUnit.All in com.silverhetch.thea.test" />
         <item itemvalue="Gradle.thea [test jacocoTestReport]" />
       </list>
@@ -565,7 +561,7 @@
       <workItem from="1557044986717" duration="304000" />
       <workItem from="1557236997208" duration="81000" />
       <workItem from="1557277594598" duration="640000" />
-      <workItem from="1557494222428" duration="247000" />
+      <workItem from="1557494222428" duration="4875000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1547137148416</created>
@@ -721,16 +717,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552232309102</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="rename function for sake of belief">
+      <created>1557494504374</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1557494504374</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GitHeadVersionSourceTest - 2019.01.14 at 02h 37m 25s.xml">
-      <configuration name="GitHeadVersionSourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GitHeadVersionSourceTest - 2019.01.14 at 02h 37m 37s.xml">
-      <configuration name="GitHeadVersionSourceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_com_silverhetch_thea_test - 2019.01.14 at 09h 43m 16s.xml">
       <configuration name="All in com.silverhetch.thea.test" configurationId="JUnit" />
     </history-entry>
@@ -755,14 +752,21 @@
     <history-entry file="All_in_thea_test - 2019.05.05 at 16h 40m 30s.xml">
       <configuration name="All in thea.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_thea_test_(1) - 2019.05.10 at 21h 21m 20s.xml">
+      <configuration name="All in thea.test (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_thea_test_(1) - 2019.05.10 at 21h 23m 06s.xml">
+      <configuration name="All in thea.test (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76570000" />
+    <option name="totallyTimeSpent" value="81198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1366" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20405728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20405728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -771,7 +775,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3707113" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36995155" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -781,7 +785,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.5631799" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.56300485" />
       <window_info anchor="bottom" id="TeamCity" order="13" />
       <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.32972324" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32970712" />
@@ -872,7 +876,8 @@
     <MESSAGE value="GitHeadTag source replaced with GitAllTagByFlavor" />
     <MESSAGE value="v1.2.1" />
     <MESSAGE value="update readme.md for print current version in console" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme.md for print current version in console" />
+    <MESSAGE value="rename function for sake of belief" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename function for sake of belief" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1222,8 +1227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="836">
+          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           <folding>
             <element signature="e#31#79#0" expanded="true" />
           </folding>

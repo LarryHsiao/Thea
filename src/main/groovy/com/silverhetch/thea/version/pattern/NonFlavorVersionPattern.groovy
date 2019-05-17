@@ -10,7 +10,7 @@ import java.util.regex.Pattern
  */
 class NonFlavorVersionPattern implements Source<Pattern> {
     @Override
-    Pattern fetch() {
+    Pattern value() {
         return Pattern.compile("^v[0-9]{1,2}\\.[0-9]{1,2}\\.[0-9]{1,2}\$")
     }
 }

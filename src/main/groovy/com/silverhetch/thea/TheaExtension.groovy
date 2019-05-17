@@ -28,7 +28,7 @@ class TheaExtension {
                     new ConstSource<Version>(
                             new DebugVersion()
                     ), flavor
-            ).fetch()
+            ).value()
         }
     }
 
@@ -40,7 +40,7 @@ class TheaExtension {
                     new ConstSource<Version>(
                             new DebugVersion()
                     ), flavor
-            ).fetch()
+            ).value()
         }
     }
 }

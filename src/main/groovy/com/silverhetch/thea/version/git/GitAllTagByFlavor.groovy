@@ -8,7 +8,7 @@ import com.silverhetch.clotho.Source
 class GitAllTagByFlavor implements Source<String[]> {
 
     @Override
-    String[] fetch() {
+    String[] value() {
         def proc = "git tag -l --sort=-v:refname --merged".execute()
         return proc.text.split('\n')
     }

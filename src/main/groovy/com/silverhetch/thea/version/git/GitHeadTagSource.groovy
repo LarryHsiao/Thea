@@ -7,7 +7,7 @@ import com.silverhetch.clotho.Source
  */
 class GitHeadTagSource implements Source<String[]> {
     @Override
-    String[] fetch() {
+    String[] value() {
         def proc = 'git tag --points-at HEAD'.execute()
         return proc.text.split('\n')
     }

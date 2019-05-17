@@ -7,7 +7,7 @@ import com.silverhetch.clotho.Source
  */
 class DateTime implements Source<String> {
     @Override
-    String fetch() {
+    String value() {
         def date = new Date()
         return date.format('yyyyMMddHHmm')
     }

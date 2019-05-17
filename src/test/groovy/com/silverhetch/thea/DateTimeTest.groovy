@@ -9,7 +9,7 @@ class DateTimeTest extends GroovyTestCase {
     void testSimple() {
         assertEquals(
                 12,
-                new DateTime().fetch().length()
+                new DateTime().value().length()
         )
     }
 }

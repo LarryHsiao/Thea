@@ -23,7 +23,7 @@ class DebugVersion implements Version {
 
     @Override
     String gitTag() {
-        return defaultTag.fetch()
+        return defaultTag.value()
     }
 
     @Override
