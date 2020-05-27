@@ -7,9 +7,8 @@ class VersionsImplTest extends GroovyTestCase {
         assertEquals(
                 "Version Name",
                 new VersionsImpl(
-                        new ConstSource<String[]>(
-                                new String[0]
-                        ),
+                        new ConstSource<String[]>(new String[0]),
+                        new ConstSource<String[]>(new String[0]),
                         new ConstSource<Version>(
                                 new DebugVersion(
                                         new ConstSource<String>("Version Name")
@@ -23,9 +22,8 @@ class VersionsImplTest extends GroovyTestCase {
         assertEquals(
                 "Version Name(Debug)",
                 new VersionsImpl(
-                        new ConstSource<String[]>(
-                                new String[0]
-                        ),
+                        new ConstSource<String[]>(new String[0]),
+                        new ConstSource<String[]>(new String[0]),
                         new ConstSource<Version>(
                                 new DebugVersion(
                                         new ConstSource<String>("Version Name")
@@ -39,9 +37,8 @@ class VersionsImplTest extends GroovyTestCase {
         assertEquals(
                 1,
                 new VersionsImpl(
-                        new ConstSource<String[]>(
-                                new String[0]
-                        ),
+                        new ConstSource<String[]>(new String[0]),
+                        new ConstSource<String[]>(new String[0]),
                         new ConstSource<Version>(
                                 new DebugVersion()
                         )
@@ -53,9 +50,8 @@ class VersionsImplTest extends GroovyTestCase {
         assertEquals(
                 "Debug",
                 new VersionsImpl(
-                        new ConstSource<String[]>(
-                                new String[0]
-                        ),
+                        new ConstSource<String[]>(new String[0]),
+                        new ConstSource<String[]>(new String[0]),
                         new ConstSource<Version>(
                                 new DebugVersion()
                         )
@@ -67,6 +63,9 @@ class VersionsImplTest extends GroovyTestCase {
         assertEquals(
                 "FlavorName_v1.0.0",
                 new VersionsImpl(
+                        new ConstSource<String[]>(
+                                ["FlavorName_v1.0.0"].toArray(new String[1])
+                        ),
                         new ConstSource<String[]>(
                                 ["FlavorName_v1.0.0"].toArray(new String[1])
                         ),
@@ -86,6 +85,28 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String[]>(
                                 ["FlavorName_v1.0.0"].toArray(new String[1])
                         ),
+                        new ConstSource<String[]>(
+                                ["FlavorName_v1.0.0"].toArray(new String[1])
+                        ),
+                        new ConstSource<Version>(
+                                new DebugVersion(
+                                        new ConstSource<String>("DefaultName")
+                                )
+                        )
+                ).byFlavor("FlavorName").versionName()
+        )
+    }
+
+    void testVersionNameNotAtHead() {
+        assertEquals(
+                "DefaultName(Debug)",
+                new VersionsImpl(
+                        new ConstSource<String[]>(
+                                [""].toArray(new String[1])
+                        ),
+                        new ConstSource<String[]>(
+                                ["FlavorName_v1.0.0"].toArray(new String[1])
+                        ),
                         new ConstSource<Version>(
                                 new DebugVersion(
                                         new ConstSource<String>("DefaultName")
@@ -99,6 +120,9 @@ class VersionsImplTest extends GroovyTestCase {
         assertEquals(
                 "FlavorName",
                 new VersionsImpl(
+                        new ConstSource<String[]>(
+                                ["FlavorName_v1.0.0"].toArray(new String[1])
+                        ),
                         new ConstSource<String[]>(
                                 ["FlavorName_v1.0.0"].toArray(new String[1])
                         ),
@@ -118,6 +142,9 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String[]>(
                                 ["FlavorName_v1.0.0"].toArray(new String[1])
                         ),
+                        new ConstSource<String[]>(
+                                ["FlavorName_v1.0.0"].toArray(new String[1])
+                        ),
                         new ConstSource<Version>(
                                 new DebugVersion(
                                         new ConstSource<String>("DefaultName")
@@ -131,6 +158,9 @@ class VersionsImplTest extends GroovyTestCase {
         assertEquals(
                 10000,
                 new VersionsImpl(
+                        new ConstSource<String[]>(
+                                ["v1.0.0"].toArray(new String[1])
+                        ),
                         new ConstSource<String[]>(
                                 ["v1.0.0"].toArray(new String[1])
                         ),
@@ -153,6 +183,9 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String[]>(
                                 ["sampleFlavor_v1.0.0"].toArray(new String[1])
                         ),
+                        new ConstSource<String[]>(
+                                ["sampleFlavor_v1.0.0"].toArray(new String[1])
+                        ),
                         new ConstSource<Version>(
                                 new DebugVersion(
                                         new ConstSource<String>("DefaultName")
@@ -166,6 +199,9 @@ class VersionsImplTest extends GroovyTestCase {
         assertEquals(
                 "DefaultName(Debug)",
                 new VersionsImpl(
+                        new ConstSource<String[]>(
+                                ["sampleFlavor_v1.0.0"].toArray(new String[1])
+                        ),
                         new ConstSource<String[]>(
                                 ["sampleFlavor_v1.0.0"].toArray(new String[1])
                         ),

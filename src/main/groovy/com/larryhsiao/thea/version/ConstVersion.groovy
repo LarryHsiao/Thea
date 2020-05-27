@@ -13,6 +13,10 @@ class ConstVersion implements Version {
         this.flavor = flavor
     }
 
+    ConstVersion(String tag) {
+        this(tag, "")
+    }
+
     @Override
     String gitTag() {
         return gitTag
@@ -22,7 +26,7 @@ class ConstVersion implements Version {
     String versionName() {
         return gitTag.replaceAll(flavor + "_v", "")
                 .replaceAll(flavor + "_V", "")
-                .replaceAll(Pattern.compile("^v"),"")
+                .replaceAll(Pattern.compile("^v"), "")
     }
 
     @Override

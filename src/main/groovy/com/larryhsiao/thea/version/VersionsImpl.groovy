@@ -10,11 +10,16 @@ import java.util.regex.Pattern
  * Versioning by Git tags.
  */
 class VersionsImpl implements Versions {
-    private final Source<String[]> tagSource
+    private final Source<String[]> headTags;
+    private final Source<String[]> allTags
     private final Source<Version> defaultVersion
 
-    VersionsImpl(Source<String[]> tagSource, Source<Version> defaultVersion) {
-        this.tagSource = tagSource
+    VersionsImpl(
+            Source<String[]> headTags,
+            Source<String[]> allTags,
+            Source<Version> defaultVersion) {
+        this.headTags = headTags
+        this.allTags = allTags
         this.defaultVersion = defaultVersion
     }
 
@@ -23,24 +28,34 @@ class VersionsImpl implements Versions {
         if ((flavor == null || flavor.isEmpty())) {
             return findNonFlavorTag()
         }
-        final String[] tags = tagSource.value()
+        final String[] headTags = new HashSet<String>(Arrays.asList(headTags.value()))
+        final String[] allTags = this.allTags.value()
         final Pattern versionPattern = new FlavorVersionPattern(flavor).value()
 
-        for (int i = 0; i < tags.length; i++) {
-            if (versionPattern.matcher(tags[i]).matches()) {
-                return new ConstVersion(tags[i], flavor)
+        for (int i = 0; i < allTags.length; i++) {
+            if (versionPattern.matcher(allTags[i]).matches()) {
+                if (headTags.contains(allTags[i])) {
+                    return new ConstVersion(allTags[i], flavor)
+                } else {
+                    return defaultVersion.value()
+                }
             }
         }
         return defaultVersion.value()
     }
 
     private Version findNonFlavorTag() {
-        final String[] tags = tagSource.value()
-        final Pattern versionpattern = new NonFlavorVersionPattern().value()
+        final String[] headTags = new HashSet<String>(Arrays.asList(headTags.value()))
+        final String[] allTags = this.allTags.value()
+        final Pattern versionPattern = new NonFlavorVersionPattern().value()
 
-        for (int i = 0; i < tags.length; i++) {
-            if (versionpattern.matcher(tags[i]).matches()) {
-                return new ConstVersion(tags[i], "")
+        for (int i = 0; i < allTags.length; i++) {
+            if (versionPattern.matcher(allTags[i]).matches()) {
+                if (headTags.contains(allTags[i])) {
+                    return new ConstVersion(allTags[i], "")
+                } else {
+                    return defaultVersion.value()
+                }
             }
         }
         return defaultVersion.value()

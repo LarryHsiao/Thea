@@ -11,7 +11,8 @@ class VersionStringTest extends GroovyTestCase {
                         "code: 10000\n" +
                         "============================",
                 new VersionString(
-                        new ConstSource<String[]>(""),
+                        new ConstSource<String[]>([""].toArray(new String[1])),
+                        new ConstSource<String[]>([""].toArray(new String[1])),
                         new ConstSource<Version>(new ConstVersion(
                                 "defaultName_v1.0.0",
                                 "defaultName"
@@ -31,7 +32,28 @@ class VersionStringTest extends GroovyTestCase {
                         new ConstSource<String[]>(
                                 ["flavorName_v1.0.0"].toArray(new String[1])
                         ),
+                        new ConstSource<String[]>(
+                                ["flavorName_v1.0.0"].toArray(new String[1])
+                        ),
                         new ConstSource<Version>(new DebugVersion()),
+                        "flavorName"
+                ).value()
+        )
+    }
+
+    void testVersionNotAtHead() {
+        assertEquals(
+                "Version---------------------\n" +
+                        "tag: DefaultName\n" +
+                        "name: DefaultName(Debug)\n" +
+                        "code: 1\n" +
+                        "============================",
+                new VersionString(
+                        new ConstSource<String[]>([""].toArray(new String[1])),
+                        new ConstSource<String[]>(["flavorName_v1.0.0"].toArray(new String[1])),
+                        new ConstSource<Version>(new DebugVersion(
+                                new ConstSource<String>("DefaultName")
+                        )),
                         "flavorName"
                 ).value()
         )
@@ -44,15 +66,18 @@ class VersionStringTest extends GroovyTestCase {
                         "name: DefaultName(Debug)\n" +
                         "code: 1\n" +
                         "============================",
-            new VersionString(
-                    new ConstSource<String[]>(
-                            ["flavorName_v1.0.0"].toArray(new String[1])
-                    ),
-                    new ConstSource<Version>(new DebugVersion(
-                            new ConstSource<String>("DefaultName")
-                    )),
-                    ""
-            ).value()
+                new VersionString(
+                        new ConstSource<String[]>(
+                                ["flavorName_v1.0.0"].toArray(new String[1])
+                        ),
+                        new ConstSource<String[]>(
+                                ["flavorName_v1.0.0"].toArray(new String[1])
+                        ),
+                        new ConstSource<Version>(new DebugVersion(
+                                new ConstSource<String>("DefaultName")
+                        )),
+                        ""
+                ).value()
         )
     }
 

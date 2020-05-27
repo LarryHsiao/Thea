@@ -1,9 +1,9 @@
 package com.larryhsiao.thea
 
-
+import com.larryhsiao.thea.version.git.GitAllTagByFlavor
+import com.larryhsiao.thea.version.git.GitHeadTagSource
 import com.silverhetch.clotho.source.ConstSource
 import com.larryhsiao.thea.version.DebugVersion
-import com.larryhsiao.thea.version.git.GitAllTagByFlavor
 import com.larryhsiao.thea.version.Version
 import com.larryhsiao.thea.version.VersionString
 import com.larryhsiao.thea.version.Versions
@@ -13,6 +13,7 @@ import java.util.function.Function
 
 class TheaExtension {
     public final Versions version = new VersionsImpl(
+            new GitHeadTagSource(),
             new GitAllTagByFlavor(),
             new ConstSource<Version>(
                     new DebugVersion()
@@ -24,6 +25,7 @@ class TheaExtension {
         @Override
         String apply(String flavor) {
             return new VersionString(
+                    new GitHeadTagSource(),
                     new GitAllTagByFlavor(),
                     new ConstSource<Version>(
                             new DebugVersion()
@@ -36,6 +38,7 @@ class TheaExtension {
         @Override
         String apply(String flavor) {
             return new VersionString(
+                    new GitHeadTagSource(),
                     new GitAllTagByFlavor(),
                     new ConstSource<Version>(
                             new DebugVersion()
