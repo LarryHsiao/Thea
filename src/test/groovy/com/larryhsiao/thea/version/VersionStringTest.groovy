@@ -7,7 +7,7 @@ class VersionStringTest extends GroovyTestCase {
         assertEquals(
                 "Version---------------------\n" +
                         "tag: defaultName_v1.0.0\n" +
-                        "name: v1.0.0\n" +
+                        "name: 1.0.0\n" +
                         "code: 10000\n" +
                         "============================",
                 new VersionString(
@@ -24,7 +24,7 @@ class VersionStringTest extends GroovyTestCase {
         assertEquals(
                 "Version---------------------\n" +
                         "tag: flavorName_v1.0.0\n" +
-                        "name: v1.0.0\n" +
+                        "name: 1.0.0\n" +
                         "code: 10000\n" +
                         "============================",
                 new VersionString(

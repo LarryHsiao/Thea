@@ -81,7 +81,7 @@ class VersionsImplTest extends GroovyTestCase {
 
     void testVersionName() {
         assertEquals(
-                "v1.0.0",
+                "1.0.0",
                 new VersionsImpl(
                         new ConstSource<String[]>(
                                 ["FlavorName_v1.0.0"].toArray(new String[1])

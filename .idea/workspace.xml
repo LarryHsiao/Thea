@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="BuildServerSettings">
     <option name="LOGIN" value="larryhsiao" />
     <option name="SERVER_URL" value="https://silverhetch.com:9082" />
@@ -24,41 +42,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="update clotho to 1.5.0">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaExtension.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/TheaExtension.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/TheaPlugin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/TheaPlugin.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/ConstVersion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/DateTime.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/DateTime.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/DebugVersion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/DebugVersion.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Version.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Version.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionInt.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionInt.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionString.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionString.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/Versions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Versions.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/VersionsImpl.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitAllTagByFlavor.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/git/GitAllTagByFlavor.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/git/GitHeadTagSource.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/git/GitHeadTagSource.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/pattern/FlavorVersionPattern.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/pattern/FlavorVersionPattern.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/silverhetch/thea/version/pattern/NonFlavorVersionPattern.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/pattern/NonFlavorVersionPattern.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/com.silverhetch.thea.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/com.silverhetch.thea.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/DateTimeTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/DateTimeTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/GitHeadVersionSourceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/git/GitHeadVersionSourceTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/VersionIntTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionIntTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/VersionStringTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionStringTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/VersionsImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/pattern/FlavorVersionPatternTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/pattern/FlavorVersionPatternTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/silverhetch/thea/version/pattern/NonFlavorVersionPatternTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/pattern/NonFlavorVersionPatternTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionStringTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionStringTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,42 +124,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="thea" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="thea" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="thea" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="thea" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="plugin development" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="thea" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="plugin portal" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="thea" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="thea" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -263,9 +217,10 @@
     <option name="myCommands">
       <command value="gradle test" />
       <command value="gradle clean build" />
+      <command value="gradle clean " />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Thea [clean build]">
+  <component name="RunManager" selected="Gradle.Thea [test]">
     <configuration name="Thea [clean build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -279,6 +234,25 @@
           <list>
             <option value="clean" />
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Thea [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" value="" />
@@ -305,6 +279,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Thea [publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishPlugins" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Thea [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -324,40 +317,13 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Thea [validatePlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="validatePlugins" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="All in thea.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thea.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Thea [clean build]" />
         <item itemvalue="Gradle.Thea [test]" />
+        <item itemvalue="Gradle.Thea [clean]" />
+        <item itemvalue="Gradle.Thea [publishPlugins]" />
+        <item itemvalue="Gradle.Thea [clean build]" />
         <item itemvalue="Gradle.Thea [login]" />
-        <item itemvalue="Gradle.Thea [validatePlugins]" />
-        <item itemvalue="JUnit.All in thea.test" />
       </list>
     </recent_temporary>
   </component>
@@ -403,7 +369,7 @@
       <workItem from="1557277594598" duration="640000" />
       <workItem from="1557494222428" duration="4875000" />
       <workItem from="1558084652556" duration="239000" />
-      <workItem from="1590566367540" duration="3083000" />
+      <workItem from="1590566367540" duration="3901000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1547137148416</created>
@@ -653,30 +619,34 @@
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
     <state x="336" y="156" key="CommitChangelistDialog2/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590569582604" />
-    <state width="1864" height="264" key="GridCell.Tab.0.bottom" timestamp="1590570298115">
+    <state width="1864" height="512" key="GridCell.Tab.0.bottom" timestamp="1590571400964">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.bottom/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590570298115" />
-    <state width="1864" height="264" key="GridCell.Tab.0.center" timestamp="1590570298114">
+    <state width="1864" height="512" key="GridCell.Tab.0.bottom/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590571400964" />
+    <state width="1864" height="512" key="GridCell.Tab.0.center" timestamp="1590571400963">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.center/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590570298114" />
-    <state width="1864" height="264" key="GridCell.Tab.0.left" timestamp="1590570298114">
+    <state width="1864" height="512" key="GridCell.Tab.0.center/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590571400963" />
+    <state width="1864" height="512" key="GridCell.Tab.0.left" timestamp="1590571400963">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.left/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590570298114" />
-    <state width="1864" height="264" key="GridCell.Tab.0.right" timestamp="1590570298115">
+    <state width="1864" height="512" key="GridCell.Tab.0.left/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590571400963" />
+    <state width="1864" height="512" key="GridCell.Tab.0.right" timestamp="1590571400963">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.right/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590570298115" />
+    <state width="1864" height="512" key="GridCell.Tab.0.right/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590571400963" />
+    <state x="733" y="204" key="RollbackChangesDialog" timestamp="1590571061845">
+      <screen x="0" y="32" width="1920" height="1048" />
+    </state>
+    <state x="733" y="204" key="RollbackChangesDialog/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590571061845" />
     <state x="625" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590566456256">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
     <state x="625" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590566456256" />
-    <state x="540" y="251" width="840" height="1034" key="run.anything.popup" timestamp="1590570290230">
+    <state x="540" y="251" width="840" height="1034" key="run.anything.popup" timestamp="1590571192791">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
-    <state x="540" y="251" width="840" height="1034" key="run.anything.popup/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590570290230" />
+    <state x="540" y="251" width="840" height="1034" key="run.anything.popup/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590571192791" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

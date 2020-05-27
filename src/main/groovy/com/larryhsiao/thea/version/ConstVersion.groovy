@@ -18,7 +18,8 @@ class ConstVersion implements Version {
 
     @Override
     String versionName() {
-        return gitTag.replaceAll(flavor+"_", "")
+        return gitTag.replaceAll(flavor + "_v", "")
+                .replaceAll(flavor + "_V", "")
     }
 
     @Override
