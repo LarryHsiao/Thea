@@ -1,6 +1,6 @@
 Thea
 -----
-A Gradle plugin that fetchs version names from git tag. Make our life a little bit easizer.
+A Gradle plugin that fetch version name from git tag. Make our life a little bit easier.
 
 [![We recommend IntelliJ IDEA](http://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
 
