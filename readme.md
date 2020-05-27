@@ -1,13 +1,6 @@
-Thea (Deprecate)
+Thea
 -----
-
-**This repository is Deprecated**
-Have use this plug-in in some of my project, it seems making versioning even more complex. The git tag might be removed by accidently, we will lost all the crumb we have. Same as attached to wrong commit. And I decided to deprecate this plugin.
-If you think this plugin still quite useful, contact me, and we can see what we can imporve.
-
-A Gradle plugin that versioning project with Git tag.
-We use git tags for versioning, but it is not as same as the version we have actually put in the source code.
-This is a plugin which read current tag and make it available in gradle script.
+A Gradle plugin that fetchs version names from git tag. Make our life a little bit easizer.
 
 [![We recommend IntelliJ IDEA](http://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
 
