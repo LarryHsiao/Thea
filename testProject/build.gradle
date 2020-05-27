@@ -8,6 +8,6 @@ buildscript {
     }
 }
 
-apply plugin: 'com.silverhetch.thea'
+apply plugin: 'com.larryhsiao.thea'
 
-System.out.println("Name "+thea.version.byFlavor("").versionName())
+System.out.println("Name "+thea.version.version().versionName())

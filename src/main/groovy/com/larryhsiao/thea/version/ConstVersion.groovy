@@ -2,6 +2,8 @@ package com.larryhsiao.thea.version
 
 import com.silverhetch.clotho.source.ConstSource
 
+import java.util.regex.Pattern
+
 class ConstVersion implements Version {
     private final String gitTag
     private final String flavor
@@ -20,6 +22,7 @@ class ConstVersion implements Version {
     String versionName() {
         return gitTag.replaceAll(flavor + "_v", "")
                 .replaceAll(flavor + "_V", "")
+                .replaceAll(Pattern.compile("^v"),"")
     }
 
     @Override
