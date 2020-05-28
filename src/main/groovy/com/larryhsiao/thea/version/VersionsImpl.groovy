@@ -65,7 +65,7 @@ class VersionsImpl implements Versions {
                 if (headTags.contains(allTags[i])) {
                     return new ConstVersion(allTags[i], "")
                 } else {
-                    return new DebugVersion(new ConstSource<String>(allTags[i])) {
+                    return new WrappedVersion(new ConstVersion(allTags[i], "")) {
                         @Override
                         String versionName() {
                             return super.versionName() + "(Debug)}"
