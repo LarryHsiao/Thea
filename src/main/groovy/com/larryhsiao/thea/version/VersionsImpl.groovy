@@ -68,7 +68,7 @@ class VersionsImpl implements Versions {
                     return new WrappedVersion(new ConstVersion(allTags[i], "")) {
                         @Override
                         String versionName() {
-                            return super.versionName() + "(Debug)}"
+                            return super.versionName() + "(Debug)"
                         }
 
                         @Override

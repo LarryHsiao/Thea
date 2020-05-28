@@ -217,7 +217,7 @@
       <command value="gradle publishPlugins" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Thea [test]">
+  <component name="RunManager" selected="Gradle.Thea [publishPlugins]">
     <configuration name="Thea [publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
