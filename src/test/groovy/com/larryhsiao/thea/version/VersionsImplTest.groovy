@@ -99,14 +99,10 @@ class VersionsImplTest extends GroovyTestCase {
 
     void testVersionNameNotAtHead() {
         assertEquals(
-                "DefaultName(Debug)",
+                "1.0.0(Debug)",
                 new VersionsImpl(
-                        new ConstSource<String[]>(
-                                [""].toArray(new String[1])
-                        ),
-                        new ConstSource<String[]>(
-                                ["FlavorName_v1.0.0"].toArray(new String[1])
-                        ),
+                        new ConstSource<String[]>([""].toArray(new String[1])),
+                        new ConstSource<String[]>(["FlavorName_v1.0.0"].toArray(new String[1])),
                         new ConstSource<Version>(
                                 new DebugVersion(
                                         new ConstSource<String>("DefaultName")

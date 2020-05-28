@@ -3,6 +3,7 @@ package com.larryhsiao.thea.version
 import com.larryhsiao.thea.version.pattern.FlavorVersionPattern
 import com.larryhsiao.thea.version.pattern.NonFlavorVersionPattern
 import com.silverhetch.clotho.Source
+import com.silverhetch.clotho.source.ConstSource
 
 import java.util.regex.Pattern
 
@@ -30,14 +31,24 @@ class VersionsImpl implements Versions {
         }
         final String[] headTags = new HashSet<String>(Arrays.asList(headTags.value()))
         final String[] allTags = this.allTags.value()
-        final Pattern versionPattern = new FlavorVersionPattern(flavor).value()
+        final Pattern pttern = new FlavorVersionPattern(flavor).value()
 
         for (int i = 0; i < allTags.length; i++) {
-            if (versionPattern.matcher(allTags[i]).matches()) {
+            if (pttern.matcher(allTags[i]).matches()) {
                 if (headTags.contains(allTags[i])) {
                     return new ConstVersion(allTags[i], flavor)
                 } else {
-                    return defaultVersion.value()
+                    return new WrappedVersion(new ConstVersion(allTags[i], flavor)) {
+                        @Override
+                        String versionName() {
+                            return super.versionName() + "(Debug)"
+                        }
+
+                        @Override
+                        int versionCode() {
+                            return 1
+                        }
+                    }
                 }
             }
         }
@@ -54,7 +65,17 @@ class VersionsImpl implements Versions {
                 if (headTags.contains(allTags[i])) {
                     return new ConstVersion(allTags[i], "")
                 } else {
-                    return defaultVersion.value()
+                    return new DebugVersion(new ConstSource<String>(allTags[i])) {
+                        @Override
+                        String versionName() {
+                            return super.versionName() + "(Debug)}"
+                        }
+
+                        @Override
+                        int versionCode() {
+                            return 1
+                        }
+                    }
                 }
             }
         }

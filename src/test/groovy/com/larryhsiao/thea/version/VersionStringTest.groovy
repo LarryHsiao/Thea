@@ -44,8 +44,8 @@ class VersionStringTest extends GroovyTestCase {
     void testVersionNotAtHead() {
         assertEquals(
                 "Version---------------------\n" +
-                        "tag: DefaultName\n" +
-                        "name: DefaultName(Debug)\n" +
+                        "tag: flavorName_v1.0.0\n" +
+                        "name: 1.0.0(Debug)\n" +
                         "code: 1\n" +
                         "============================",
                 new VersionString(
