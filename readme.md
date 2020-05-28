@@ -7,7 +7,7 @@ A Gradle plugin that fetch version name from git tag. Make our life a little bit
 [![PDD status](http://www.0pdd.com/svg?name=LarryHsiao/thea)](http://www.0pdd.com/p?name=LarryHsiao/thea)
 
 [![](https://img.shields.io/github/tag/LarryHsiao/Thea.svg)](https://github.com/LarryHsiao/Thea/tags)
-[![](https://silverhetch.com:9082/app/rest/builds/buildType:Thea_Build/statusIcon.svg)](https://github.com/LarryHsiao/thea)
+[![](https://larryhsiao.com:9082/app/rest/builds/buildType:Thea_Build/statusIcon.svg)](https://github.com/LarryHsiao/thea)
 [![Build Status](https://travis-ci.org/LarryHsiao/Thea.svg?branch=master)](https://travis-ci.org/LarryHsiao/Thea)
 [![codecov](https://codecov.io/gh/LarryHsiao/Thea/branch/master/graph/badge.svg)](https://codecov.io/gh/LarryHsiao/Thea)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -23,15 +23,8 @@ A Gradle plugin that fetch version name from git tag. Make our life a little bit
 #### Apply plugin
 
 ```groovy
-// For dependencies
-buildscript {
-    repositories {
-        maven { url = 'http://172.104.79.181:81/repository/Elizabeth/' }
-    }
-}
-
 plugins {
-    id 'com.silverhetch.thea' version '1.1.3'
+    id 'com.larryhsiao.thea' version '1.4.7'
 }
 ```
 
@@ -42,7 +35,7 @@ System.out.println(thea.versionIndicator.apply(""))
 
 // To apply to java project, here is a sample
 group 'com.silverhetch'
-version thea.version.versionByFlavor("").versionName()
+version thea.version.version().versionName()
 ```
 
 #### Print Version in Gradle output
@@ -68,8 +61,8 @@ code: 1
 
 ###### v1.0.0
 ```groovy
-def versionName = thea.version.versionByFlavor("").versionName()
-def versionCode = thea.version.versionByFlavor("").versionCode()
+def versionName = thea.version.version().versionName()
+def versionCode = thea.version.version().versionCode()
 
 // versionName = 1.0.0
 // versionCode = 10000
