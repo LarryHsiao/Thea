@@ -24,18 +24,18 @@ A Gradle plugin that fetch version name from git tag. Make our life a little bit
 
 ```groovy
 plugins {
-    id 'com.larryhsiao.thea' version '1.4.7'
+    id 'com.larryhsiao.thea' version '1.5.0'
 }
 ```
 
 #### Usage
 ```groovy
 // To print the version info with given flavor, empty to find tag which has no flavor prefix.
-System.out.println(thea.versionIndicator.apply(""))
+System.out.println(thea.versionIndicator(""))
 
 // To apply to java project, here is a sample
-group 'com.silverhetch'
-version thea.version.version().versionName()
+group 'com.larryhsiao'
+version thea.version().versionName()
 ```
 
 #### Print Version in Gradle output
@@ -61,8 +61,8 @@ code: 1
 
 ###### v1.0.0
 ```groovy
-def versionName = thea.version.version().versionName()
-def versionCode = thea.version.version().versionCode()
+def versionName = thea.version().versionName()
+def versionCode = thea.version().versionCode()
 
 // versionName = 1.0.0
 // versionCode = 10000
@@ -72,8 +72,8 @@ def versionCode = thea.version.version().versionCode()
 ###### FlavorName_v1.0.0
 
 ```groovy
-def versionName = thea.version.versionByFlavor("FlavorName").versionName() // 1.0.0
-def versionCode = thea.version.versionByFlavor("FlavorName").versionCode() // 10000
+def versionName = thea.byFlavor("FlavorName").versionName() // 1.0.0
+def versionCode = thea.byFlavor("FlavorName").versionCode() // 10000
 
 // versionName = 1.0.0
 // versionCode = 10000
@@ -83,8 +83,8 @@ def versionCode = thea.version.versionByFlavor("FlavorName").versionCode() // 10
 ###### FlavorName_v1.0.0
 
 ```groovy
-def versionName = thea.version.versionByFlavor("FlavorNameNotMatched").versionName() 
-def versionCode = thea.version.versionByFlavor("FlavorNameNotMatched").versionCode() 
+def versionName = thea.byFlavor("FlavorNameNotMatched").versionName() 
+def versionCode = thea.byFlavor("FlavorNameNotMatched").versionCode() 
 
 // versionName = 201901151200(Debug)
 // versioncode = 1
