@@ -4,7 +4,7 @@ plugins {
     id 'groovy'
     id 'java-gradle-plugin'
     id 'com.gradle.plugin-publish' version '0.12.0'
-    id 'com.silverhetch.thea' version '1.3.1'
+    id 'com.larryhsiao.thea' version '1.4.7'
 }
 
 group 'com.larryhsiao'
@@ -45,7 +45,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile "com.silverhetch:clotho:1.17.3"
+    implementation "com.larryhsiao:clotho:1.18.2"
     implementation gradleApi()
     implementation localGroovy()
 }

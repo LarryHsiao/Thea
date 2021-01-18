@@ -1,9 +1,8 @@
 package com.larryhsiao.thea.version
 
+import com.larryhsiao.clotho.Source
 import com.larryhsiao.thea.version.pattern.FlavorVersionPattern
 import com.larryhsiao.thea.version.pattern.NonFlavorVersionPattern
-import com.silverhetch.clotho.Source
-import com.silverhetch.clotho.source.ConstSource
 
 import java.util.regex.Pattern
 
