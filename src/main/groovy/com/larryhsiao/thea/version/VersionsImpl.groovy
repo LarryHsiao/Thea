@@ -30,10 +30,10 @@ class VersionsImpl implements Versions {
         }
         final String[] headTags = new HashSet<String>(Arrays.asList(headTags.value()))
         final String[] allTags = this.allTags.value()
-        final Pattern pttern = new FlavorVersionPattern(flavor).value()
+        final Pattern pattern = new FlavorVersionPattern(flavor).value()
 
         for (int i = 0; i < allTags.length; i++) {
-            if (pttern.matcher(allTags[i]).matches()) {
+            if (pattern.matcher(allTags[i]).matches()) {
                 if (headTags.contains(allTags[i])) {
                     return new ConstVersion(allTags[i], flavor)
                 } else {
