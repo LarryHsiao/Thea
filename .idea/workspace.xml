@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="BuildServerSettings">
@@ -43,6 +32,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +141,12 @@
       <GitPushTagMode />
     </option>
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="KotlinMultiplatform">
+    <executables />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="RSaHuibF" />
   </component>
@@ -161,6 +158,7 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -217,25 +215,19 @@
       <command value="gradle publishPlugins" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Thea [publishPlugins]">
-    <configuration name="Thea [publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishPlugins" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.All in thea.test">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Thea [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -256,7 +248,15 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VersionStringTest.testVersionNotAtHead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in thea.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thea.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VersionIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thea.test" />
       <extension name="coverage">
         <pattern>
@@ -265,14 +265,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionStringTest" />
-      <option name="METHOD_NAME" value="testVersionNotAtHead" />
+      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionIntTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VersionIntTest.testVerNonPrefixV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thea.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.larryhsiao.thea.version.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
+      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionIntTest" />
+      <option name="METHOD_NAME" value="testVerNonPrefixV" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VersionsImplTest.testEmptyFlavorNotFoundVersionName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VersionsImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thea.test" />
       <extension name="coverage">
         <pattern>
@@ -282,38 +297,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
       <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionsImplTest" />
-      <option name="METHOD_NAME" value="testEmptyFlavorNotFoundVersionName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VersionsImplTest.testVersionNameNotAtHead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thea.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.larryhsiao.thea.version.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionsImplTest" />
-      <option name="METHOD_NAME" value="testVersionNameNotAtHead" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in thea.test" />
+        <item itemvalue="JUnit.VersionIntTest" />
+        <item itemvalue="JUnit.VersionIntTest.testVerNonPrefixV" />
+        <item itemvalue="JUnit.VersionsImplTest" />
         <item itemvalue="Gradle.Thea [test]" />
-        <item itemvalue="Gradle.Thea [publishPlugins]" />
-        <item itemvalue="JUnit.VersionStringTest.testVersionNotAtHead" />
-        <item itemvalue="JUnit.VersionsImplTest.testVersionNameNotAtHead" />
-        <item itemvalue="JUnit.VersionsImplTest.testEmptyFlavorNotFoundVersionName" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -357,7 +356,10 @@
       <workItem from="1557494222428" duration="4875000" />
       <workItem from="1558084652556" duration="239000" />
       <workItem from="1590566367540" duration="8621000" />
-      <workItem from="1590628130594" duration="1507000" />
+      <workItem from="1590628130594" duration="4744000" />
+      <workItem from="1601046588842" duration="496000" />
+      <workItem from="1609046985979" duration="989000" />
+      <workItem from="1610934278494" duration="201000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1547137148416</created>
@@ -548,11 +550,32 @@
       <option name="project" value="LOCAL" />
       <updated>1590628673695</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Duplicate debug label">
+      <created>1590630032913</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1590630032913</updated>
+    </task>
+    <task id="LOCAL-00029" summary="remove suffix '{'">
+      <created>1590630142200</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1590630142200</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Update test assets">
+      <created>1609047303584</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1609047303584</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -627,8 +650,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/testProject" />
     </ignored-roots>
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="readme" />
     <MESSAGE value="separate file and classes" />
     <MESSAGE value="Version package" />
     <MESSAGE value="v1.0.6" />
@@ -651,102 +672,60 @@
     <MESSAGE value="update clotho to 1.5.0" />
     <MESSAGE value="Use debug output if tag not at head" />
     <MESSAGE value="Use current version with debug rather then default one" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use current version with debug rather then default one" />
+    <MESSAGE value="Duplicate debug label" />
+    <MESSAGE value="remove suffix '{'" />
+    <MESSAGE value="Update test assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update test assets" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="170" width="1720" height="732" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590628973243">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state x="3015" y="276" key="CommitChangelistDialog2" timestamp="1609047303451">
+      <screen x="2237" y="0" width="2560" height="1440" />
     </state>
-    <state x="100" y="170" width="1720" height="732" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628973243" />
-    <state x="112" y="1420" width="1720" height="754" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590575998463" />
-    <state x="726" y="197" key="#com.intellij.ide.util.MemberChooser" timestamp="1590628475209">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state x="3015" y="276" key="CommitChangelistDialog2/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047303451" />
+    <state x="2493" y="105" key="DiffContextDialog" timestamp="1609047281367">
+      <screen x="2237" y="0" width="2560" height="1440" />
     </state>
-    <state x="726" y="197" key="#com.intellij.ide.util.MemberChooser/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628475209" />
-    <state x="597" y="401" width="725" height="321" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590569779044">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state x="2493" y="105" key="DiffContextDialog/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047281367" />
+    <state x="3212" y="1286" key="FileChooserDialogImpl" timestamp="1601046785519">
+      <screen x="2145" y="849" width="2560" height="1440" />
     </state>
-    <state x="597" y="401" width="725" height="321" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590569779044" />
-    <state x="375" y="1320" width="1194" height="954" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590573397143">
-      <screen x="12" y="1278" width="1920" height="1080" />
+    <state x="3212" y="1286" key="FileChooserDialogImpl/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601046785519" />
+    <state width="2506" height="209" key="GridCell.Tab.0.bottom" timestamp="1609048722180">
+      <screen x="2238" y="0" width="2560" height="1440" />
     </state>
-    <state x="375" y="1320" width="1194" height="954" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590573397143" />
-    <state x="780" y="306" key="AndroidProcessChooserDialog" timestamp="1590628414498">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state width="2506" height="352" key="GridCell.Tab.0.bottom/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601047087205" />
+    <state width="2506" height="209" key="GridCell.Tab.0.bottom/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
+    <state width="2506" height="209" key="GridCell.Tab.0.bottom/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
+    <state width="2506" height="209" key="GridCell.Tab.0.center" timestamp="1609048722180">
+      <screen x="2238" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="306" key="AndroidProcessChooserDialog/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628414498" />
-    <state x="336" y="156" key="CommitChangelistDialog2" timestamp="1590628673555">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state width="2506" height="352" key="GridCell.Tab.0.center/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601047087205" />
+    <state width="2506" height="209" key="GridCell.Tab.0.center/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
+    <state width="2506" height="209" key="GridCell.Tab.0.center/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
+    <state width="2506" height="209" key="GridCell.Tab.0.left" timestamp="1609048722180">
+      <screen x="2238" y="0" width="2560" height="1440" />
     </state>
-    <state x="336" y="156" key="CommitChangelistDialog2/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628673555" />
-    <state x="348" y="1406" key="CommitChangelistDialog2/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576095935" />
-    <state x="192" y="109" width="1536" height="864" key="DiffContextDialog" timestamp="1590573795579">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state width="2506" height="352" key="GridCell.Tab.0.left/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601047087205" />
+    <state width="2506" height="209" key="GridCell.Tab.0.left/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
+    <state width="2506" height="209" key="GridCell.Tab.0.left/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
+    <state width="2506" height="209" key="GridCell.Tab.0.right" timestamp="1609048722180">
+      <screen x="2238" y="0" width="2560" height="1440" />
     </state>
-    <state x="192" y="109" width="1536" height="864" key="DiffContextDialog/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590571475032" />
-    <state x="192" y="109" width="1536" height="864" key="DiffContextDialog/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590573795579" />
-    <state width="1864" height="259" key="GridCell.Tab.0.bottom" timestamp="1590628731798">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state width="2506" height="352" key="GridCell.Tab.0.right/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601047087205" />
+    <state width="2506" height="209" key="GridCell.Tab.0.right/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
+    <state width="2506" height="209" key="GridCell.Tab.0.right/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
+    <state x="2996" y="331" key="SettingsEditor" timestamp="1609047234985">
+      <screen x="2237" y="0" width="2560" height="1440" />
     </state>
-    <state width="1864" height="259" key="GridCell.Tab.0.bottom/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628731798" />
-    <state width="1864" height="299" key="GridCell.Tab.0.bottom/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576133962" />
-    <state width="1864" height="259" key="GridCell.Tab.0.center" timestamp="1590628731798">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state x="2996" y="331" key="SettingsEditor/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047234985" />
+    <state x="3117" y="431" key="Vcs.Push.Dialog.v2" timestamp="1609047305086">
+      <screen x="2237" y="0" width="2560" height="1440" />
     </state>
-    <state width="1864" height="259" key="GridCell.Tab.0.center/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628731798" />
-    <state width="1864" height="299" key="GridCell.Tab.0.center/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576133962" />
-    <state width="1864" height="259" key="GridCell.Tab.0.left" timestamp="1590628731798">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state x="3117" y="431" key="Vcs.Push.Dialog.v2/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047305086" />
+    <state x="3187" y="1455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601046611695">
+      <screen x="2145" y="849" width="2560" height="1440" />
     </state>
-    <state width="1864" height="259" key="GridCell.Tab.0.left/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628731798" />
-    <state width="1864" height="299" key="GridCell.Tab.0.left/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576133962" />
-    <state width="1864" height="259" key="GridCell.Tab.0.right" timestamp="1590628731798">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1864" height="259" key="GridCell.Tab.0.right/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628731798" />
-    <state width="1864" height="299" key="GridCell.Tab.0.right/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576133962" />
-    <state width="1864" height="299" key="GridCell.Tab.1.bottom" timestamp="1590576133963">
-      <screen x="12" y="1278" width="1920" height="1080" />
-    </state>
-    <state width="1864" height="299" key="GridCell.Tab.1.bottom/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576133963" />
-    <state width="1864" height="299" key="GridCell.Tab.1.center" timestamp="1590576133963">
-      <screen x="12" y="1278" width="1920" height="1080" />
-    </state>
-    <state width="1864" height="299" key="GridCell.Tab.1.center/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576133963" />
-    <state width="1864" height="299" key="GridCell.Tab.1.left" timestamp="1590576133963">
-      <screen x="12" y="1278" width="1920" height="1080" />
-    </state>
-    <state width="1864" height="299" key="GridCell.Tab.1.left/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576133963" />
-    <state width="1864" height="299" key="GridCell.Tab.1.right" timestamp="1590576133963">
-      <screen x="12" y="1278" width="1920" height="1080" />
-    </state>
-    <state width="1864" height="299" key="GridCell.Tab.1.right/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576133963" />
-    <state x="733" y="204" key="RollbackChangesDialog" timestamp="1590571061845">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state x="733" y="204" key="RollbackChangesDialog/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590571061845" />
-    <state x="472" y="1470" key="Vcs.Push.Dialog.v2" timestamp="1590576108799">
-      <screen x="12" y="1278" width="1920" height="1080" />
-    </state>
-    <state x="472" y="1470" key="Vcs.Push.Dialog.v2/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576108799" />
-    <state x="625" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590566456256">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state x="625" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590566456256" />
-    <state x="572" y="1475" width="803" height="644" key="find.popup" timestamp="1590574585091">
-      <screen x="12" y="1278" width="1920" height="1080" />
-    </state>
-    <state x="572" y="1475" width="803" height="644" key="find.popup/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590574585091" />
-    <state x="540" y="251" width="840" height="1034" key="run.anything.popup" timestamp="1590628718840">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state x="540" y="251" width="840" height="1034" key="run.anything.popup/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628718840" />
-    <state x="552" y="1206" width="840" height="1066" key="run.anything.popup/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590576122834" />
-    <state x="495" y="73" width="928" height="924" key="search.everywhere.popup" timestamp="1590628677436">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state x="495" y="73" width="928" height="924" key="search.everywhere.popup/12.1278.1920.1080/0.32.1920.1048@0.32.1920.1048" timestamp="1590628677436" />
-    <state x="507" y="1320" width="928" height="952" key="search.everywhere.popup/12.1278.1920.1080/0.32.1920.1048@12.1278.1920.1080" timestamp="1590575958114" />
+    <state x="3187" y="1455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601046611695" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

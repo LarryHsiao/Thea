@@ -1,6 +1,6 @@
 package com.larryhsiao.thea.version
 
-import com.silverhetch.clotho.Source
+import com.larryhsiao.clotho.Source
 
 /**
  * Date time indicator string.

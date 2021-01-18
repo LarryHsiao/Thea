@@ -1,6 +1,6 @@
 package com.larryhsiao.thea.version.pattern
 
-import com.silverhetch.clotho.Source
+import com.larryhsiao.clotho.Source
 
 import java.util.regex.Pattern
 

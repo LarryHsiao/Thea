@@ -1,6 +1,6 @@
 package com.larryhsiao.thea.version.git
 
-import com.silverhetch.clotho.Source
+import com.larryhsiao.clotho.Source
 
 /**
  * Source for all tag by flavor sorted by name.

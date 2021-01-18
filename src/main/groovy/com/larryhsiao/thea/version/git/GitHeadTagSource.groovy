@@ -1,6 +1,6 @@
 package com.larryhsiao.thea.version.git
 
-import com.silverhetch.clotho.Source
+import com.larryhsiao.clotho.Source
 
 /**
  * Source which fetch tags current HEAD have.
