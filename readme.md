@@ -44,7 +44,7 @@ Add the following line to Build.Gradle or anywhere you want to apply.
 The current version shows up every time we do gradle sync.
 
 ```groovy
-println(thea.versionIndicator.apply(""))
+println(thea.versionIndicator(""))
 ```
 
 ###### Output Example
