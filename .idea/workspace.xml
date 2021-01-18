@@ -31,9 +31,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/WrappedVersionTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/git/GitAllTagByFlavorTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionInt.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionInt.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +83,6 @@
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="0" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="80" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -180,31 +181,33 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Groovy" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.larryhsiao.thea.version" />
+      <recent name="com.larryhsiao.thea.version.git" />
       <recent name="com.silverhetch.thea.version" />
       <recent name="com.silverhetch.thea.version.pattern" />
       <recent name="com.silverhetch.thea" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/buildsrc/src/main/resources/META-INF/gradle-plugins" />
-      <recent name="$PROJECT_DIR$/buildsrc" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.larryhsiao.thea" />
       <recent name="com.silverhetch.thea" />
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/buildsrc/src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/buildsrc/src/main/resources/META-INF/gradle-plugins" />
+      <recent name="$PROJECT_DIR$/buildsrc" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -229,25 +232,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Thea [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="All in thea.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thea.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -256,33 +240,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VersionIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GitAllTagByFlavorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thea.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.larryhsiao.thea.version.*" />
+          <option name="PATTERN" value="com.larryhsiao.thea.version.git.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionIntTest" />
+      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version.git" />
+      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.git.GitAllTagByFlavorTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VersionIntTest.testVerNonPrefixV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thea.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.larryhsiao.thea.version.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionIntTest" />
-      <option name="METHOD_NAME" value="testVerNonPrefixV" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -302,13 +270,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VersionsImplTest.testTheNonExistHeadTag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thea.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.larryhsiao.thea.version.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
+      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionsImplTest" />
+      <option name="METHOD_NAME" value="testTheNonExistHeadTag" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WrappedVersionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thea.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.larryhsiao.thea.version.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
+      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.WrappedVersionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in thea.test" />
-        <item itemvalue="JUnit.VersionIntTest" />
-        <item itemvalue="JUnit.VersionIntTest.testVerNonPrefixV" />
+        <item itemvalue="JUnit.WrappedVersionTest" />
         <item itemvalue="JUnit.VersionsImplTest" />
-        <item itemvalue="Gradle.Thea [test]" />
+        <item itemvalue="JUnit.GitAllTagByFlavorTest" />
+        <item itemvalue="JUnit.VersionsImplTest.testTheNonExistHeadTag" />
       </list>
     </recent_temporary>
   </component>
@@ -678,6 +677,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update test assets" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="449" y="132" key="#Project_Structure" timestamp="1610943669154">
+      <screen x="1" y="0" width="1920" height="1080" />
+    </state>
+    <state x="449" y="132" key="#Project_Structure/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610943669154" />
     <state x="3015" y="276" key="CommitChangelistDialog2" timestamp="1609047303451">
       <screen x="2237" y="0" width="2560" height="1440" />
     </state>
@@ -686,46 +689,43 @@
       <screen x="2237" y="0" width="2560" height="1440" />
     </state>
     <state x="2493" y="105" key="DiffContextDialog/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047281367" />
-    <state x="3212" y="1286" key="FileChooserDialogImpl" timestamp="1601046785519">
-      <screen x="2145" y="849" width="2560" height="1440" />
+    <state width="1866" height="288" key="GridCell.Tab.0.bottom" timestamp="1610946224899">
+      <screen x="1" y="0" width="1920" height="1080" />
     </state>
-    <state x="3212" y="1286" key="FileChooserDialogImpl/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601046785519" />
-    <state width="2506" height="209" key="GridCell.Tab.0.bottom" timestamp="1609048722180">
-      <screen x="2238" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2506" height="352" key="GridCell.Tab.0.bottom/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601047087205" />
+    <state width="1866" height="288" key="GridCell.Tab.0.bottom/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610946224899" />
     <state width="2506" height="209" key="GridCell.Tab.0.bottom/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
     <state width="2506" height="209" key="GridCell.Tab.0.bottom/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
-    <state width="2506" height="209" key="GridCell.Tab.0.center" timestamp="1609048722180">
-      <screen x="2238" y="0" width="2560" height="1440" />
+    <state width="1866" height="288" key="GridCell.Tab.0.center" timestamp="1610946224899">
+      <screen x="1" y="0" width="1920" height="1080" />
     </state>
-    <state width="2506" height="352" key="GridCell.Tab.0.center/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601047087205" />
+    <state width="1866" height="288" key="GridCell.Tab.0.center/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610946224899" />
     <state width="2506" height="209" key="GridCell.Tab.0.center/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
     <state width="2506" height="209" key="GridCell.Tab.0.center/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
-    <state width="2506" height="209" key="GridCell.Tab.0.left" timestamp="1609048722180">
-      <screen x="2238" y="0" width="2560" height="1440" />
+    <state width="1866" height="288" key="GridCell.Tab.0.left" timestamp="1610946224899">
+      <screen x="1" y="0" width="1920" height="1080" />
     </state>
-    <state width="2506" height="352" key="GridCell.Tab.0.left/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601047087205" />
+    <state width="1866" height="288" key="GridCell.Tab.0.left/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610946224899" />
     <state width="2506" height="209" key="GridCell.Tab.0.left/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
     <state width="2506" height="209" key="GridCell.Tab.0.left/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
-    <state width="2506" height="209" key="GridCell.Tab.0.right" timestamp="1609048722180">
-      <screen x="2238" y="0" width="2560" height="1440" />
+    <state width="1866" height="288" key="GridCell.Tab.0.right" timestamp="1610946224899">
+      <screen x="1" y="0" width="1920" height="1080" />
     </state>
-    <state width="2506" height="352" key="GridCell.Tab.0.right/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601047087205" />
+    <state width="1866" height="288" key="GridCell.Tab.0.right/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610946224899" />
     <state width="2506" height="209" key="GridCell.Tab.0.right/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
     <state width="2506" height="209" key="GridCell.Tab.0.right/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
-    <state x="2996" y="331" key="SettingsEditor" timestamp="1609047234985">
-      <screen x="2237" y="0" width="2560" height="1440" />
+    <state x="570" y="248" key="SettingsEditor" timestamp="1610940752020">
+      <screen x="1" y="0" width="1920" height="1080" />
     </state>
+    <state x="570" y="248" key="SettingsEditor/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610940752020" />
     <state x="2996" y="331" key="SettingsEditor/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047234985" />
     <state x="3117" y="431" key="Vcs.Push.Dialog.v2" timestamp="1609047305086">
       <screen x="2237" y="0" width="2560" height="1440" />
     </state>
     <state x="3117" y="431" key="Vcs.Push.Dialog.v2/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047305086" />
-    <state x="3187" y="1455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601046611695">
-      <screen x="2145" y="849" width="2560" height="1440" />
+    <state x="667" y="280" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1610946144504">
+      <screen x="1" y="0" width="1920" height="1080" />
     </state>
-    <state x="3187" y="1455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2145.849.2560.1440/1.1209.1920.1080/4854.849.2560.1440/0.0.1920.1080@2145.849.2560.1440" timestamp="1601046611695" />
+    <state x="667" y="280" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610946144504" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -768,6 +768,9 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/thea$All_in_thea_test.ic" NAME="All in thea.test Coverage Results" MODIFIED="1610943955811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="gradleExecuteTaskHistory">
     <option value="$PROJECT_DIR$" />
     <option value="publishPlugins" />
@@ -784,92 +787,5 @@
     <option value="printCurrentStatus" />
     <option value="hello" />
     <option value=":publishPlugins" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>main|thea</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

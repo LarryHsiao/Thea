@@ -13,10 +13,6 @@ class ConstVersion implements Version {
         this.flavor = flavor
     }
 
-    ConstVersion(String tag) {
-        this(tag, "")
-    }
-
     @Override
     String gitTag() {
         return gitTag
