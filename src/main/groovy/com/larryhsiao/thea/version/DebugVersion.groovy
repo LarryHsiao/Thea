@@ -17,12 +17,12 @@ class DebugVersion implements Version {
     }
 
     @Override
-    String versionName() {
-        return gitTag() + "(Debug)"
+    String name() {
+        return tag() + "(Debug)"
     }
 
     @Override
-    String gitTag() {
+    String tag() {
         return defaultTag.value()
     }
 
@@ -32,7 +32,7 @@ class DebugVersion implements Version {
     }
 
     @Override
-    int versionCode() {
+    int code() {
         return 1
     }
 }

@@ -11,8 +11,8 @@ class WrappedVersionTest extends GroovyTestCase {
                 "flavor"
             )
         );
-        assertEquals("1.0.0", version.versionName())
-        assertEquals(10000, version.versionCode())
+        assertEquals("1.0.0", version.name())
+        assertEquals(10000, version.code())
         assertEquals("flavor", version.flavor())
     }
 }

@@ -1,6 +1,6 @@
 package com.larryhsiao.thea.version
 
-import com.larryhsiao.clotho.source.ConstSource
+import com.larryhsiao.clotho.Source
 
 import java.util.regex.Pattern
 
@@ -14,15 +14,15 @@ class ConstVersion implements Version {
     }
 
     @Override
-    String gitTag() {
+    String tag() {
         return gitTag
     }
 
     @Override
-    String versionName() {
+    String name() {
         return gitTag.replaceAll(flavor + "_v", "")
-                .replaceAll(flavor + "_V", "")
-                .replaceAll(Pattern.compile("^v"), "")
+            .replaceAll(flavor + "_V", "")
+            .replaceAll(Pattern.compile("^v"), "")
     }
 
     @Override
@@ -31,11 +31,14 @@ class ConstVersion implements Version {
     }
 
     @Override
-    int versionCode() {
+    int code() {
         return new VersionInt(
-                new ConstSource<String>(
-                        versionName()
-                )
+            new Source<String>() {
+                @Override
+                String value() throws Exception {
+                    return name()
+                }
+            }
         ).value()
     }
 }

@@ -12,7 +12,9 @@ interface Versions {
     Version byFlavor(String flavor)
 
     /**
-     * @return The version object without flavor.
+     * The version object without flavor.
      */
     Version version()
+
+    String indicator(String flavor)
 }

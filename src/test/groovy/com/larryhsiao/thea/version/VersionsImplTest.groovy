@@ -1,6 +1,7 @@
 package com.larryhsiao.thea.version
 
-import com.larryhsiao.clotho.source.ConstSource
+import com.larryhsiao.clotho.ConstSource
+
 
 class VersionsImplTest extends GroovyTestCase {
     void testDefaultTag() {
@@ -14,7 +15,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("Version Name")
                     )
                 )
-            ).byFlavor("SampleFlavor").gitTag()
+            ).byFlavor("SampleFlavor").tag()
         )
     }
 
@@ -29,7 +30,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("Version Name")
                     )
                 )
-            ).byFlavor("SampleFlavor").versionName()
+            ).byFlavor("SampleFlavor").name()
         )
     }
 
@@ -42,7 +43,7 @@ class VersionsImplTest extends GroovyTestCase {
                 new ConstSource<Version>(
                     new DebugVersion()
                 )
-            ).byFlavor("SampleFlavor").versionCode()
+            ).byFlavor("SampleFlavor").code()
         )
     }
 
@@ -74,7 +75,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("DefaultName")
                     )
                 )
-            ).byFlavor("FlavorName").gitTag()
+            ).byFlavor("FlavorName").tag()
         )
     }
 
@@ -93,7 +94,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("DefaultName")
                     )
                 )
-            ).byFlavor("FlavorName").versionName()
+            ).byFlavor("FlavorName").name()
         )
     }
 
@@ -108,7 +109,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("DefaultName")
                     )
                 )
-            ).byFlavor("FlavorName").versionName()
+            ).byFlavor("FlavorName").name()
         )
     }
 
@@ -146,7 +147,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("DefaultName")
                     )
                 )
-            ).byFlavor("FlavorName").versionCode()
+            ).byFlavor("FlavorName").code()
         )
     }
 
@@ -165,7 +166,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("DefaultName")
                     )
                 )
-            ).byFlavor("").versionCode()
+            ).byFlavor("").code()
         )
     }
 
@@ -187,7 +188,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("DefaultName")
                     )
                 )
-            ).byFlavor("").versionCode()
+            ).byFlavor("").code()
         )
     }
 
@@ -206,7 +207,7 @@ class VersionsImplTest extends GroovyTestCase {
                         new ConstSource<String>("DefaultName")
                     )
                 )
-            ).version().versionName()
+            ).version().name()
         )
     }
 
@@ -224,7 +225,7 @@ class VersionsImplTest extends GroovyTestCase {
                 )
             )
         ).byFlavor("")
-        assertEquals("1.0.0(Debug)", version.versionName())
-        assertEquals(1, version.versionCode())
+        assertEquals("1.0.0(Debug)", version.name())
+        assertEquals(1, version.code())
     }
 }

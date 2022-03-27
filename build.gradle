@@ -39,13 +39,12 @@ jacocoTestReport {
 }
 
 repositories {
-    mavenCentral()
-    jcenter()
+    maven { url = "https://larryhsiao.com:11000/repository/maven-public/" }
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    implementation "com.larryhsiao:clotho:1.18.2"
+    implementation "com.larryhsiao:clotho:2.0.4"
     implementation gradleApi()
     implementation localGroovy()
 }

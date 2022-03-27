@@ -1,24 +1,23 @@
 package com.larryhsiao.thea.version
 
 interface Version {
-
     /**
-     * @return The byFlavor name
+     * The tag name parse from git history.
      */
-    String gitTag()
+    String tag()
 
     /**
      * The version name without flavor. e.g v1.0.0
      */
-    String versionName()
+    String name()
 
     /**
-     * @return Flavor name
+     * Flavor name
      */
     String flavor()
 
     /**
-     * @return The version code
+     * The version code
      */
-    int versionCode()
+    int code()
 }

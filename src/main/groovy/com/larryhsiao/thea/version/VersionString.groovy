@@ -31,9 +31,9 @@ class VersionString implements Source<String> {
                 defaultVersion
         ).byFlavor(flavor)
         return "Version---------------------\n" +
-                "tag: ${version.gitTag()}\n" +
-                "name: ${version.versionName()}\n" +
-                "code: ${version.versionCode()}\n" +
+                "tag: ${version.tag()}\n" +
+                "name: ${version.name()}\n" +
+                "code: ${version.code()}\n" +
                 "============================"
     }
 }
