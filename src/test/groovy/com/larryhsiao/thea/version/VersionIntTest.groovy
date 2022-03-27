@@ -1,6 +1,7 @@
 package com.larryhsiao.thea.version
 
-import com.larryhsiao.clotho.source.ConstSource
+import com.larryhsiao.clotho.ConstSource
+
 
 class VersionIntTest extends GroovyTestCase {
     void testVer0() {

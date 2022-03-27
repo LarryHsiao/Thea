@@ -11,13 +11,13 @@ public class WrappedVersion implements Version {
     }
 
     @Override
-    public String gitTag() {
-        return version.gitTag();
+    public String tag() {
+        return version.tag();
     }
 
     @Override
-    public String versionName() {
-        return version.versionName();
+    public String name() {
+        return version.name();
     }
 
     @Override
@@ -26,7 +26,7 @@ public class WrappedVersion implements Version {
     }
 
     @Override
-    public int versionCode() {
-        return version.versionCode();
+    public int code() {
+        return version.code();
     }
 }

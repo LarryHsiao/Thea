@@ -39,12 +39,12 @@ class VersionsImpl implements Versions {
                 } else {
                     return new WrappedVersion(new ConstVersion(allTags[i], flavor)) {
                         @Override
-                        String versionName() {
-                            return super.versionName() + "(Debug)"
+                        String name() {
+                            return super.name() + "(Debug)"
                         }
 
                         @Override
-                        int versionCode() {
+                        int code() {
                             return 1
                         }
                     }
@@ -66,12 +66,12 @@ class VersionsImpl implements Versions {
                 } else {
                     return new WrappedVersion(new ConstVersion(allTags[i], "")) {
                         @Override
-                        String versionName() {
-                            return super.versionName() + "(Debug)"
+                        String name() {
+                            return super.name() + "(Debug)"
                         }
 
                         @Override
-                        int versionCode() {
+                        int code() {
                             return 1
                         }
                     }

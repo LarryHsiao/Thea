@@ -31,10 +31,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/TheaExtensionTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/thea.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/TheaExtension.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/TheaExtension.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/DebugVersion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/DebugVersion.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Version.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Version.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionInt.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionInt.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionString.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionString.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/WrappedVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/WrappedVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/TheaExtensionTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/TheaExtensionTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionIntTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionIntTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/WrappedVersionTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/WrappedVersionTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +187,9 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="RSaHuibF" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1cTxQ3Jdc5SMz6ibdJg18eXtYKc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -180,6 +199,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -201,7 +221,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Groovy" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -378,6 +398,7 @@
       <workItem from="1601046588842" duration="496000" />
       <workItem from="1609046985979" duration="989000" />
       <workItem from="1610934278494" duration="201000" />
+      <workItem from="1648350906678" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1547137148416</created>
@@ -669,7 +690,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -701,71 +721,6 @@
     <MESSAGE value="Update test assets" />
     <MESSAGE value="bring up the testing coverage" />
     <option name="LAST_COMMIT_MESSAGE" value="bring up the testing coverage" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="449" y="132" key="#Project_Structure" timestamp="1610943669154">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state x="449" y="132" key="#Project_Structure/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610943669154" />
-    <state x="774" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1610947036973">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state x="774" y="257" key="#com.intellij.ide.util.MemberChooser/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947036973" />
-    <state x="585" y="207" key="CommitChangelistDialog2" timestamp="1610947724927">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state x="585" y="207" key="CommitChangelistDialog2/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947724927" />
-    <state x="3015" y="276" key="CommitChangelistDialog2/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047303451" />
-    <state x="2493" y="105" key="DiffContextDialog" timestamp="1609047281367">
-      <screen x="2237" y="0" width="2560" height="1440" />
-    </state>
-    <state x="2493" y="105" key="DiffContextDialog/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047281367" />
-    <state width="1866" height="363" key="GridCell.Tab.0.bottom" timestamp="1610947684828">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1866" height="363" key="GridCell.Tab.0.bottom/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947684828" />
-    <state width="2506" height="209" key="GridCell.Tab.0.bottom/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
-    <state width="2506" height="209" key="GridCell.Tab.0.bottom/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
-    <state width="1866" height="363" key="GridCell.Tab.0.center" timestamp="1610947684827">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1866" height="363" key="GridCell.Tab.0.center/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947684827" />
-    <state width="2506" height="209" key="GridCell.Tab.0.center/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
-    <state width="2506" height="209" key="GridCell.Tab.0.center/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
-    <state width="1866" height="363" key="GridCell.Tab.0.left" timestamp="1610947684827">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1866" height="363" key="GridCell.Tab.0.left/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947684827" />
-    <state width="2506" height="209" key="GridCell.Tab.0.left/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
-    <state width="2506" height="209" key="GridCell.Tab.0.left/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
-    <state width="1866" height="363" key="GridCell.Tab.0.right" timestamp="1610947684827">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1866" height="363" key="GridCell.Tab.0.right/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947684827" />
-    <state width="2506" height="209" key="GridCell.Tab.0.right/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047354464" />
-    <state width="2506" height="209" key="GridCell.Tab.0.right/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2238.0.2560.1440" timestamp="1609048722180" />
-    <state x="570" y="248" key="SettingsEditor" timestamp="1610940752020">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state x="570" y="248" key="SettingsEditor/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610940752020" />
-    <state x="2996" y="331" key="SettingsEditor/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047234985" />
-    <state x="661" y="323" key="Vcs.Push.Dialog.v2" timestamp="1610947347349">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state x="661" y="323" key="Vcs.Push.Dialog.v2/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947347349" />
-    <state x="3117" y="431" key="Vcs.Push.Dialog.v2/2237.0.2560.1440/0.360.1920.1080/2238.0.2560.1440@2237.0.2560.1440" timestamp="1609047305086" />
-    <state x="667" y="280" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1610947211596">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state x="667" y="280" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947211596" />
-    <state x="645" y="244" width="631" height="628" key="find.popup" timestamp="1610947474377">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state x="645" y="244" width="631" height="628" key="find.popup/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947474377" />
-    <state x="624" y="266" width="672" height="678" key="search.everywhere.popup" timestamp="1610947314428">
-      <screen x="1" y="0" width="1920" height="1080" />
-    </state>
-    <state x="624" y="266" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/1.0.1920.1080@1.0.1920.1080" timestamp="1610947314428" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
