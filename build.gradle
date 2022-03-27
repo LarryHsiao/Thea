@@ -1,16 +1,22 @@
+buildscript {
+    repositories {
+        maven { url = "https://larryhsiao.com:11000/repository/maven-public/" }
+    }
+}
+
 plugins {
     id 'jacoco'
     id 'maven'
     id 'groovy'
     id 'java-gradle-plugin'
     id 'com.gradle.plugin-publish' version '0.12.0'
-    id 'com.larryhsiao.thea' version '1.4.7'
+    id 'com.larryhsiao.thea' version '1.5.1'
 }
 
 group 'com.larryhsiao'
-version thea.version.byFlavor("").versionName()
+version thea.version().name()
 
-println(thea.indicator.apply(""))
+println(thea.indicator(""))
 
 pluginBundle {
     website = 'https://github.com/LarryHsiao/Thea'
