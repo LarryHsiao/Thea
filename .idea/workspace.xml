@@ -32,10 +32,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/TheaExtension.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/TheaExtension.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Versions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Versions.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/TheaExtensionTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/TheaExtensionTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +138,7 @@
     </option>
   </component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="2" />
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -240,10 +237,12 @@
       <command value="gradle test" />
       <command value="gradle clean build" />
       <command value="gradle clean " />
+      <command value="gradle login" />
       <command value="gradle publishPlugins" />
+      <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in thea.test">
+  <component name="RunManager" selected="Gradle.thea [test]">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -257,6 +256,90 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="thea [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="thea [login]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="login" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="thea [publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishPlugins" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="thea [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="All in thea.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thea.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -265,74 +348,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheaExtensionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thea.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.larryhsiao.thea.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.larryhsiao.thea" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.TheaExtensionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TheaExtensionTest.testIndicator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thea.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.larryhsiao.thea.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.larryhsiao.thea" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.TheaExtensionTest" />
-      <option name="METHOD_NAME" value="testIndicator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VersionsImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thea.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.larryhsiao.thea.version.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.VersionsImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WrappedVersionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thea.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.larryhsiao.thea.version.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.WrappedVersionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.thea [test]" />
+        <item itemvalue="Gradle.thea [clean]" />
+        <item itemvalue="Gradle.thea [login]" />
+        <item itemvalue="Gradle.thea [publishPlugins]" />
         <item itemvalue="JUnit.All in thea.test" />
-        <item itemvalue="JUnit.TheaExtensionTest.testIndicator" />
-        <item itemvalue="JUnit.TheaExtensionTest" />
-        <item itemvalue="JUnit.WrappedVersionTest" />
-        <item itemvalue="JUnit.VersionsImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -753,7 +775,7 @@
     <SUITE FILE_PATH="coverage/thea___master_$TheaExtensionTest_testIndicator.ic" NAME="TheaExtensionTest.testIndicator Coverage Results" MODIFIED="1648353385961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.larryhsiao.thea.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/thea___master_$All_in_thea_test.ic" NAME="All in thea.test Coverage Results" MODIFIED="1648353518746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/thea___master_$All_in_thea_test.ic" NAME="All in thea.test Coverage Results" MODIFIED="1648353754444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/thea$All_in_thea_test.ic" NAME="All in thea.test Coverage Results" MODIFIED="1610947610756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="gradleExecuteTaskHistory">
