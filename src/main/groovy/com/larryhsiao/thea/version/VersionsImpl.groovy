@@ -85,4 +85,19 @@ class VersionsImpl implements Versions {
     Version version() {
         return byFlavor("")
     }
+
+    @Override
+    String indicator(String flavor) {
+        return new VersionString(
+            headTags,
+            allTags,
+            new Source<Version>() {
+                @Override
+                Version value() throws Exception {
+                    return new DebugVersion()
+                }
+            },
+            flavor
+        ).value()
+    }
 }

@@ -31,26 +31,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f442d999-a1d9-4f23-b183-b44a4016c784" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/thea.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/TheaExtension.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/TheaExtension.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/ConstVersion.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/DebugVersion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/DebugVersion.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Version.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Version.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionInt.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionInt.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionString.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionString.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Versions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/Versions.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/VersionsImpl.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/WrappedVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/larryhsiao/thea/version/WrappedVersion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/TheaExtensionTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/TheaExtensionTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionIntTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionIntTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/WrappedVersionTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/WrappedVersionTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,21 +265,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GitAllTagByFlavorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thea.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.larryhsiao.thea.version.git.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.larryhsiao.thea.version.git" />
-      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.version.git.GitAllTagByFlavorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TheaExtensionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thea.test" />
       <extension name="coverage">
@@ -306,6 +276,22 @@
       <option name="PACKAGE_NAME" value="com.larryhsiao.thea" />
       <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.TheaExtensionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TheaExtensionTest.testIndicator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thea.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.larryhsiao.thea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.larryhsiao.thea" />
+      <option name="MAIN_CLASS_NAME" value="com.larryhsiao.thea.TheaExtensionTest" />
+      <option name="METHOD_NAME" value="testIndicator" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -343,10 +329,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in thea.test" />
+        <item itemvalue="JUnit.TheaExtensionTest.testIndicator" />
         <item itemvalue="JUnit.TheaExtensionTest" />
         <item itemvalue="JUnit.WrappedVersionTest" />
         <item itemvalue="JUnit.VersionsImplTest" />
-        <item itemvalue="JUnit.GitAllTagByFlavorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +384,7 @@
       <workItem from="1601046588842" duration="496000" />
       <workItem from="1609046985979" duration="989000" />
       <workItem from="1610934278494" duration="201000" />
-      <workItem from="1648350906678" duration="1578000" />
+      <workItem from="1648350906678" duration="2413000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1547137148416</created>
@@ -727,7 +713,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionsImplTest.groovy</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -737,7 +723,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/groovy/com/larryhsiao/thea/version/VersionStringTest.groovy</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -764,6 +750,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/thea___master_$TheaExtensionTest_testIndicator.ic" NAME="TheaExtensionTest.testIndicator Coverage Results" MODIFIED="1648353385961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.larryhsiao.thea.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/thea___master_$All_in_thea_test.ic" NAME="All in thea.test Coverage Results" MODIFIED="1648353518746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/thea$All_in_thea_test.ic" NAME="All in thea.test Coverage Results" MODIFIED="1610947610756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="gradleExecuteTaskHistory">

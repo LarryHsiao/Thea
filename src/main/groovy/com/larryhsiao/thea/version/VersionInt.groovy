@@ -8,8 +8,8 @@ import com.larryhsiao.clotho.Source
 class VersionInt implements Source<Integer> {
     private final Source<String> versionString
 
-    VersionInt(Source<String> verisonString) {
-        this.versionString = verisonString
+    VersionInt(Source<String> versionString) {
+        this.versionString = versionString
     }
 
     @Override

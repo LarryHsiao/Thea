@@ -6,8 +6,8 @@ import com.larryhsiao.thea.version.git.GitAllTagByFlavor
 import com.larryhsiao.thea.version.git.GitHeadTagSource
 
 class TheaExtension implements Versions {
-    private final Source<String[]> gitHeads;
-    private final Source<String[]> gitAllTags;
+    private final Source<String[]> gitHeads
+    private final Source<String[]> gitAllTags
 
     TheaExtension() {
         this(new GitHeadTagSource(), new GitAllTagByFlavor())
@@ -42,17 +42,8 @@ class TheaExtension implements Versions {
     /**
      * @return A fixed format version indicator.
      */
-    String versionIndicator(String flavor) {
-        return new VersionString(
-            new GitHeadTagSource(),
-            new GitAllTagByFlavor(),
-            new Source<Version>() {
-                @Override
-                Version value() throws Exception {
-                    return new DebugVersion()
-                }
-            },
-            flavor
-        ).value()
+    @Override
+    String indicator(String flavor) {
+        return version.indicator(flavor)
     }
 }
